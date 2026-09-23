@@ -11,4 +11,4 @@
 }
 ---
 
-Paideia è un’associazione culturale senza fini di lucro nata nella primavera del 2004 al fine di recuperare lo spirito di un’educazione di ampio respiro ed alta qualità, che privilegia una relazione docente / discente a contatto con la natura. Questo principio ispirava alcune scuole filosofiche greche, che il nome scelto vuole richiamare.
+Paideia è un’associazione culturale senza fini di lucro nata nella primavera del 2004 al fine di recuperare lo spirito di un’educazione di ampio respiro ed alta qualità, che privilegia una relazione docente / discente a contatto con la natura. Questo principio ispirava alcune scuole filosofiche greche, che il nome scelto vuole richiamare. TEST
