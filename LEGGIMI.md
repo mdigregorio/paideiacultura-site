@@ -1,31 +1,41 @@
 # Paideia — sito statico
 
-Questa cartella contiene il sito pronto per GitHub Pages. La pagina è `index.html`;
-stile e comportamento si trovano in `assets/`. Immagini e allegati originali sono
-in `wp-content/uploads/`: il nome mantiene la compatibilità con i vecchi URL degli allegati,
-ma non è presente alcuna installazione di WordPress.
+Questa cartella contiene il sito pronto per GitHub Pages. I testi si modificano
+nei file Markdown della cartella `contenuti/`; `index.html` viene poi creato
+automaticamente. Stile e comportamento si trovano in `assets/`, immagini e
+allegati in `assets/` e `uploads/`. Non è presente alcuna installazione WordPress.
 
 ## Visualizzare e pubblicare
 
-Aprire `index.html` nel browser per consultare il sito. Non servono compilazione,
-database, PHP o dipendenze. Per una verifica servita via HTTP, dalla cartella di
-lavoro principale eseguire `node strumenti/anteprima.mjs` e visitare
-`http://127.0.0.1:4173/`.
+Per rigenerare e controllare il sito in locale, da questa cartella eseguire:
 
-Caricare **il contenuto di questa cartella** nella radice del repository scelto:
-`index.html`, `.nojekyll`, `assets/` e `wp-content/`. Abilitare GitHub Pages sulla
-radice del branch di pubblicazione. Le risorse usano percorsi relativi, quindi la
-pagina funziona anche sotto il percorso di un repository. Non è stato impostato
-un dominio personalizzato; il collegamento di paideiacultura.it verrà fatto quando
-sarà noto l'indirizzo definitivo del repository.
+```text
+node strumenti/genera.mjs
+node strumenti/verifica.mjs
+```
+
+Non servono database, PHP, pacchetti o dipendenze esterne. Dopo la generazione si
+può aprire `index.html` nel browser. Le istruzioni editoriali sono in
+`contenuti/README.md`.
+
+Caricare **il contenuto di questa cartella** nella radice del repository, inclusi
+`.github/`, `contenuti/`, `strumenti/`, `modello.html`, `assets/` e `uploads/`.
+In **Settings → Pages → Build and deployment → Source** scegliere **GitHub
+Actions**. A ogni modifica del ramo `main`, il flusso in
+`.github/workflows/pubblica.yml` rigenera, verifica e pubblica il sito.
+
+Le risorse usano percorsi relativi, quindi la pagina funziona anche sotto il
+percorso di un repository. Il dominio personalizzato si configura separatamente
+nelle impostazioni di GitHub Pages.
 
 Non caricare `backup-wordpress`: il backup e il database non fanno parte del sito.
 
 ## Contenuti e revisione editoriale
 
 - Un'unica pagina: manifesto, associazione, formazione, convegni, archivio, contatti.
-- I 13 documenti storici sono presenti per intero nell'HTML, in pannelli espandibili.
-  Le ancore aprono automaticamente il documento collegato quando JavaScript è attivo.
+- I documenti storici mantenuti nella versione modificata sono separati in
+  `contenuti/archivio/` e pubblicati in pannelli espandibili. Le ancore aprono
+  automaticamente il documento collegato quando JavaScript è attivo.
 - Il manifesto duplicato nel database è stato riunito nella versione della home.
 - I dati del direttivo e dei soci provengono dal contenuto del 2018. La data è resa
   esplicita: occorre fornire le informazioni aggiornate per presentarli come attuali.
