@@ -9,7 +9,7 @@
   "luogo": "Aula Magna dell’Università degli Studi di Firenze, via Laura 48",
   "iscrizione_url": "https://it.surveymonkey.com/r/AlbertoMarradi",
   "iscrizione_testo": "Iscriviti all’evento",
-  "locandina": "uploads/locandina-alberto-marradi.pdf",
+  "locandina": "https://www.paideiascuoleestive.it/public/download/locandina-marradi-2026.pdf",
   "locandina_testo": "Scarica la locandina"
 }
 ---
