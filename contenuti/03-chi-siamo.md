@@ -2,8 +2,8 @@
 {
   "eyebrow": "L’associazione",
   "titolo": "Chi siamo",
-  "introduzione": "Paideia è aperta ad esponenti della società civile che ne condividano i fini.",
-  "nota": "La composizione dell’associazione qui riportata è quella documentata nel sito del 2018.",
+  "introduzione_nascosta": "Paideia è aperta ad esponenti della società civile che ne condividano i fini.",
+  "nota_nascosta": "La composizione dell’associazione qui riportata è quella documentata nel sito del 2018.",
   "direttivo": [
     {
       "ruolo": "Presidente",
