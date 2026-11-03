@@ -132,9 +132,12 @@ function renderSite() {
           <p class="news-subtitle">${escapeHtml(news.meta.sottotitolo)}</p>
           <div class="news-description">${markdownToHtml(news.body)}</div>
         </div>
-        <div class="news-details">
-          <p><strong>Quando</strong><time datetime="${escapeHtml(news.meta.data_iso)}">${escapeHtml(news.meta.data)}</time></p>
-          <p><strong>Dove</strong><span>${escapeHtml(news.meta.luogo)}</span></p>
+        <div class="news-aside">
+          <div class="news-details">
+            <p><strong>Quando</strong><time datetime="${escapeHtml(news.meta.data_iso)}">${escapeHtml(news.meta.data)}</time></p>
+            <p><strong>Dove</strong><span>${escapeHtml(news.meta.luogo)}</span></p>
+          </div>
+          ${news.meta.immagine ? `<figure class="news-image"><a href="${escapeHtml(news.meta.locandina)}" download aria-label="${escapeHtml(news.meta.locandina_testo)}"><img src="${escapeHtml(news.meta.immagine)}" alt="${escapeHtml(news.meta.immagine_alt ?? '')}" loading="lazy" decoding="async"></a></figure>` : ''}
         </div>
       </div>
       <div class="news-actions">
@@ -194,6 +197,7 @@ function renderSite() {
   if (process.argv.includes('--controlla')) {
     if (news.meta.attiva && !generated.includes('class="news-banner section"')) throw new Error('Banner news non generato.');
     if (!news.meta.attiva && generated.includes('class="news-banner section"')) throw new Error('Banner news presente nonostante attiva=false.');
+    if (news.meta.attiva && news.meta.immagine && !generated.includes('class="news-image"')) throw new Error('Immagine news non generata.');
     console.log(`Controllo completato: banner ${news.meta.attiva ? 'attivo' : 'disattivato'}, ${generated.length} caratteri HTML.`);
     return;
   }
