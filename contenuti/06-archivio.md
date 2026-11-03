@@ -1,7 +1,8 @@
 ---
 {
   "eyebrow": "La memoria delle iniziative",
-  "titolo": "L’archivio delle scuole"
+  "titolo": "L’archivio delle scuole",
+  "nota": "Sezione in aggiornamento"
 }
 ---
 
