@@ -1,6 +1,6 @@
 ---
 {
-  "eyebrow": "Associazione culturale · dal 2004",
+  "eyebrow": "Associazione culturale PAIDEIA · dal 2004",
   "titolo_html": "Alta formazione<br>nelle <em>scienze umane.</em>",
   "pulsante_testo": "Le nostre iniziative",
   "pulsante_link": "#formazione",
