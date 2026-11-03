@@ -6,6 +6,7 @@ viene rigenerato e pubblicato automaticamente.
 
 ## Quale file modificare
 
+- `00-news.md`: banner delle notizie in cima alla pagina.
 - `01-home.md`: apertura della pagina.
 - `02-manifesto.md`: manifesto.
 - `03-chi-siamo.md`: direttivo, soci e direttivi precedenti.
@@ -36,6 +37,25 @@ modificarne i dati. I file sono mostrati nell'ordine alfabetico del nome.
 I documenti dell'archivio derivano dal vecchio sito e possono contenere tabelle
 HTML: non eliminare i tag di una tabella se non si vuole rimuoverla. Tutto il
 resto è modificabile con la normale sintassi Markdown.
+
+## Attivare o disattivare il banner delle notizie
+
+Aprire `00-news.md` e impostare il valore `attiva`:
+
+```json
+"attiva": true
+```
+
+mostra il banner, mentre:
+
+```json
+"attiva": false
+```
+
+lo nasconde completamente senza cancellarne testi e collegamenti. Nello stesso
+file si possono modificare titolo, data, luogo, link per l'iscrizione e percorso
+della locandina. Caricare il PDF indicato nella cartella `uploads/` prima di
+attivare la notizia.
 
 ## Pubblicazione
 
