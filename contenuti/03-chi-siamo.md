@@ -3,7 +3,7 @@
   "eyebrow": "L’associazione",
   "titolo": "Chi siamo",
   "introduzione": "",
-  "nota": "Sito in aggiornamento. La composizione dell’associazione qui riportata è quella documentata nel sito del 2018.",
+  "nota": "Sito in aggiornamento. La composizione dell’associazione qui riportata è obsoleta.",
   "direttivo": [
     {
       "ruolo": "Presidente",
