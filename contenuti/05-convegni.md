@@ -5,4 +5,4 @@
 }
 ---
 
-L’associazione ha organizzato, o contribuito ad organizzare, queste iniziative.
+L’associazione ha organizzato, o contribuito ad organizzare, le seguenti iniziative.
