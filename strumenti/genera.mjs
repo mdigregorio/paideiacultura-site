@@ -107,6 +107,13 @@ function readContent(relative) {
 }
 
 const sectionHeading = (number, eyebrow, title, id) => `<div class="section-heading"><span class="section-number" aria-hidden="true">${number}</span><div><p class="eyebrow">${escapeHtml(eyebrow)}</p><h2 id="titolo-${id}">${escapeHtml(title)}</h2></div></div>`;
+const isActive = content => content.meta.attiva !== false;
+const renderIntroduction = content => content.meta.introduzione
+  ? `<p class="lead">${inlineMarkdown(content.meta.introduzione)}</p>`
+  : '';
+const renderNote = content => content.meta.nota
+  ? `<p class="archive-note">${inlineMarkdown(content.meta.nota)}</p>`
+  : '';
 
 function renderSite() {
   const news = readContent('00-news.md');
@@ -156,49 +163,72 @@ function renderSite() {
       <a class="text-link" href="${escapeHtml(home.meta.link_secondario)}">${escapeHtml(home.meta.testo_secondario)}</a>
       <div class="hero-bottom"><span>${escapeHtml(home.meta.motto)}</span><span aria-hidden="true">${escapeHtml(home.meta.parola_greca)}</span></div>
     </section>`,
-    `<section class="section" id="manifesto" aria-labelledby="titolo-manifesto" data-source-id="28">
+    isActive(manifesto) ? `<section class="section" id="manifesto" aria-labelledby="titolo-manifesto" data-source-id="28">
       ${sectionHeading('01', manifesto.meta.eyebrow, manifesto.meta.titolo, 'manifesto')}
-      <p class="lead">${inlineMarkdown(manifesto.meta.introduzione)}</p>
+      ${renderIntroduction(manifesto)}
+      ${renderNote(manifesto)}
       <details class="manifesto-details"><summary>${escapeHtml(manifesto.meta.etichetta_apertura)} <span class="disclosure" aria-hidden="true"></span></summary><div class="prose">${markdownToHtml(manifesto.body)}</div></details>
-    </section>`,
-    `<section class="section" id="chi-siamo" aria-labelledby="titolo-chi-siamo" data-source-id="15">
+    </section>` : '',
+    isActive(about) ? `<section class="section" id="chi-siamo" aria-labelledby="titolo-chi-siamo" data-source-id="15">
       ${sectionHeading('02', about.meta.eyebrow, about.meta.titolo, 'chi-siamo')}
-      <p class="lead">${inlineMarkdown(about.meta.introduzione)}</p>
-      <p class="archive-note">${inlineMarkdown(about.meta.nota)}</p>
+      ${renderIntroduction(about)}
+      ${renderNote(about)}
       <dl class="people">${people}</dl>
       <details class="plain-details"><summary>Le socie e i soci <span class="disclosure" aria-hidden="true"></span></summary><ul class="members">${members}</ul></details>
       <details class="plain-details"><summary>I direttivi precedenti <span class="disclosure" aria-hidden="true"></span></summary><div class="prose">${markdownToHtml(about.body)}</div></details>
-    </section>`,
-    `<section class="section" id="formazione" aria-labelledby="titolo-formazione" data-source-id="34">
+    </section>` : '',
+    isActive(formation) ? `<section class="section" id="formazione" aria-labelledby="titolo-formazione" data-source-id="34">
       ${sectionHeading('03', formation.meta.eyebrow, formation.meta.titolo, 'formazione')}
-      <p class="lead">${inlineMarkdown(formation.body)}</p>
+      ${renderIntroduction(formation)}
+      ${renderNote(formation)}
       <div class="initiatives">${initiatives.map(item => `<article class="initiative"><p class="eyebrow">${escapeHtml(item.meta.categoria)}</p><h3>${escapeHtml(item.meta.titolo)}</h3><div class="prose">${markdownToHtml(item.body)}</div></article>`).join('')}</div>
-    </section>`,
-    `<section class="section" id="convegni" aria-labelledby="titolo-convegni" data-source-id="52">
+    </section>` : '',
+    isActive(conference) ? `<section class="section" id="convegni" aria-labelledby="titolo-convegni" data-source-id="52">
       ${sectionHeading('04', conference.meta.eyebrow, conference.meta.titolo, 'convegni')}
-      ${markdownToHtml(conference.body)}
+      ${renderIntroduction(conference)}
+      ${renderNote(conference)}
       <div class="events">${events.map(item => `<article class="event"><p class="event-date">${escapeHtml(item.meta.luogo)} · <time datetime="${escapeHtml(item.meta.data_iso)}">${escapeHtml(item.meta.data)}</time></p><h3>${escapeHtml(item.meta.titolo)}</h3>${markdownToHtml(item.body)}<a href="${escapeHtml(item.meta.allegato)}">${escapeHtml(item.meta.etichetta_allegato)} <span class="filetype">${escapeHtml(item.meta.tipo_allegato)}</span></a></article>`).join('')}</div>
-    </section>`,
-    `<section class="section archive-section" id="archivio" aria-labelledby="titolo-archivio">
+    </section>` : '',
+    isActive(archive) ? `<section class="section archive-section" id="archivio" aria-labelledby="titolo-archivio">
       ${sectionHeading('05', archive.meta.eyebrow, archive.meta.titolo, 'archivio')}
-      <p class="lead">${inlineMarkdown(archive.body)}</p>
+      ${renderIntroduction(archive)}
+      ${renderNote(archive)}
       ${archiveEntries.map((item, index) => `${index === 0 || archiveEntries[index - 1].meta.gruppo !== item.meta.gruppo ? `<h3>${escapeHtml(item.meta.gruppo)}</h3>` : ''}<details class="archive-entry" id="${escapeHtml(item.meta.id)}" data-source-id="${escapeHtml(item.meta.source_id)}"><summary><span class="entry-date">${escapeHtml(item.meta.data)}</span><span>${escapeHtml(item.meta.titolo)}</span><span class="disclosure" aria-hidden="true"></span></summary><div class="archive-body prose"><p class="archive-note">Documento d’archivio. Date, quote e riferimenti si riferiscono all’edizione indicata.</p>${markdownToHtml(item.body)}<a class="back-link" href="#archivio">Torna all’indice dell’archivio ↑</a></div></details>`).join('\n')}
-    </section>`,
-    `<section class="section contact-section" id="contatti" aria-labelledby="titolo-contatti" data-source-id="16">
+    </section>` : '',
+    isActive(contact) ? `<section class="section contact-section" id="contatti" aria-labelledby="titolo-contatti" data-source-id="16">
       ${sectionHeading('06', contact.meta.eyebrow, contact.meta.titolo, 'contatti')}
-      <p class="lead">${inlineMarkdown(contact.body)}</p>
+      ${renderIntroduction(contact)}
+      ${renderNote(contact)}
       <a class="button"${contact.meta.nuova_scheda ? ' target="_blank" rel="noopener"' : ''} href="${escapeHtml(contact.meta.link)}">${escapeHtml(contact.meta.etichetta_link)} <span aria-hidden="true">↗</span></a>
-    </section>`
+    </section>` : ''
   ].filter(Boolean).join('\n');
 
   const template = fs.readFileSync(templateFile, 'utf8');
   if (!template.includes('{{CONTENUTO}}')) throw new Error('Segnaposto {{CONTENUTO}} mancante in modello.html');
-  const generated = template.replace('{{CONTENUTO}}', sections);
+  let generated = template.replace('{{CONTENUTO}}', sections);
+  const sectionStates = { manifesto, 'chi-siamo': about, formazione: formation, convegni: conference, archivio: archive, contatti: contact };
+  const inactiveAnchors = [];
+  for (const [id, content] of Object.entries(sectionStates)) {
+    if (isActive(content)) continue;
+    inactiveAnchors.push(id);
+    generated = generated.replace(new RegExp(`<li><a href="#${id}"[\\s\\S]*?</a></li>`, 'g'), '');
+    generated = generated.replace(new RegExp(`<a class="(?:button|text-link)" href="#${id}"[\\s\\S]*?</a>`, 'g'), '');
+  }
+  if (!isActive(archive)) inactiveAnchors.push(...archiveEntries.map(item => item.meta.id));
+  for (const id of inactiveAnchors) {
+    generated = generated.replace(new RegExp(`<a\\b[^>]*href="#${id}"[^>]*>([\\s\\S]*?)</a>`, 'g'), '$1');
+  }
   if (process.argv.includes('--controlla')) {
     if (news.meta.attiva && !generated.includes('class="news-banner section"')) throw new Error('Banner news non generato.');
     if (!news.meta.attiva && generated.includes('class="news-banner section"')) throw new Error('Banner news presente nonostante attiva=false.');
     if (news.meta.attiva && news.meta.immagine && !generated.includes('class="news-image"')) throw new Error('Immagine news non generata.');
-    console.log(`Controllo completato: banner ${news.meta.attiva ? 'attivo' : 'disattivato'}, ${generated.length} caratteri HTML.`);
+    for (const [id, content] of Object.entries(sectionStates)) {
+      if (!isActive(content) && (generated.includes(`id="${id}"`) || generated.includes(`href="#${id}"`))) throw new Error(`La sezione disattivata ${id} è ancora collegata.`);
+    }
+    for (const id of inactiveAnchors) {
+      if (generated.includes(`href="#${id}"`)) throw new Error(`Collegamento rimasto verso contenuto disattivato: ${id}.`);
+    }
+    console.log(`Controllo completato: banner ${news.meta.attiva ? 'attivo' : 'disattivato'}, sezioni attive ${Object.values(sectionStates).filter(isActive).length}/6, ${generated.length} caratteri HTML.`);
     return;
   }
   fs.writeFileSync(outputFile, generated);
@@ -236,15 +266,18 @@ function initialize() {
   }, htmlToMarkdown(extract(/<div class="intro prose">([\s\S]*?)<\/div>/, homeHtml, 'home testo'))));
 
   fs.writeFileSync(path.join(contentDir, '02-manifesto.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, manifestoHtml, 'manifesto eyebrow')),
     titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, manifestoHtml, 'manifesto titolo')),
     introduzione: htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, manifestoHtml, 'manifesto introduzione')),
+    nota: '',
     etichetta_apertura: stripTags(extract(/<summary>([\s\S]*?)<span class="disclosure"/, manifestoHtml, 'manifesto etichetta'))
   }, htmlToMarkdown(extract(/<summary>[\s\S]*?<div class="prose">([\s\S]*?)<\/div><\/details>/, manifestoHtml, 'manifesto testo'))));
 
   const directors = [...aboutHtml.matchAll(/<div><dt>([\s\S]*?)<\/dt><dd>([\s\S]*?)<span>([\s\S]*?)<\/span><\/dd><\/div>/g)].map(match => ({ ruolo: stripTags(match[1]), nome: stripTags(match[2]), istituzione: stripTags(match[3]) }));
   const members = [...extract(/<ul class="members">([\s\S]*?)<\/ul>/, aboutHtml, 'soci').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(match => stripTags(match[1]));
   fs.writeFileSync(path.join(contentDir, '03-chi-siamo.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, aboutHtml, 'chi siamo eyebrow')),
     titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, aboutHtml, 'chi siamo titolo')),
     introduzione: htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, aboutHtml, 'chi siamo introduzione')),
@@ -254,23 +287,32 @@ function initialize() {
   }, htmlToMarkdown(extract(/<summary>I direttivi precedenti[\s\S]*?<div class="prose">([\s\S]*?)<\/div><\/details>/, aboutHtml, 'direttivi precedenti'))));
 
   fs.writeFileSync(path.join(contentDir, '04-formazione.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, formationHtml, 'formazione eyebrow')),
-    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, formationHtml, 'formazione titolo'))
-  }, htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, formationHtml, 'formazione introduzione'))));
+    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, formationHtml, 'formazione titolo')),
+    introduzione: htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, formationHtml, 'formazione introduzione')),
+    nota: ''
+  }));
   const initiativeMatches = [...formationHtml.matchAll(/<article class="initiative"><p class="eyebrow">([\s\S]*?)<\/p><h3>([\s\S]*?)<\/h3><div class="prose">([\s\S]*?)<\/div><\/article>/g)];
   initiativeMatches.forEach((match, index) => fs.writeFileSync(path.join(contentDir, 'formazione', `${String(index + 1).padStart(2, '0')}-${slug(stripTags(match[2]))}.md`), serialize({ categoria: stripTags(match[1]), titolo: stripTags(match[2]) }, htmlToMarkdown(match[3]))));
 
   fs.writeFileSync(path.join(contentDir, '05-convegni.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, conferenceHtml, 'convegni eyebrow')),
-    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, conferenceHtml, 'convegni titolo'))
-  }, htmlToMarkdown(extract(/<\/div>\s*([\s\S]*?)\s*<div class="events">/, conferenceHtml, 'convegni introduzione'))));
+    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, conferenceHtml, 'convegni titolo')),
+    introduzione: htmlToMarkdown(extract(/<\/div>\s*([\s\S]*?)\s*<div class="events">/, conferenceHtml, 'convegni introduzione')).trim(),
+    nota: ''
+  }));
   const eventMatches = [...conferenceHtml.matchAll(/<article class="event"><p class="event-date">([\s\S]*?) · <time datetime="([^"]+)">([\s\S]*?)<\/time><\/p><h3>([\s\S]*?)<\/h3>([\s\S]*?)<a href="([^"]+)">([\s\S]*?)<span class="filetype">([\s\S]*?)<\/span><\/a><\/article>/g)];
   eventMatches.forEach((match, index) => fs.writeFileSync(path.join(contentDir, 'convegni', `${String(index + 1).padStart(2, '0')}-${slug(stripTags(match[4]))}.md`), serialize({ luogo: stripTags(match[1]), data_iso: match[2], data: stripTags(match[3]), titolo: stripTags(match[4]), allegato: match[6], etichetta_allegato: stripTags(match[7]), tipo_allegato: stripTags(match[8]) }, htmlToMarkdown(match[5]))));
 
   fs.writeFileSync(path.join(contentDir, '06-archivio.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, archiveHtml, 'archivio eyebrow')),
-    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, archiveHtml, 'archivio titolo'))
-  }, htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, archiveHtml, 'archivio introduzione'))));
+    titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, archiveHtml, 'archivio titolo')),
+    introduzione: htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, archiveHtml, 'archivio introduzione')),
+    nota: ''
+  }));
   const archiveToken = /<h3>([\s\S]*?)<\/h3>|<details class="archive-entry" id="([^"]+)" data-source-id="([^"]+)"><summary><span class="entry-date">([\s\S]*?)<\/span><span>([\s\S]*?)<\/span>[\s\S]*?<div class="archive-body prose"><p class="archive-note">[\s\S]*?<\/p>([\s\S]*?)<a class="back-link"[\s\S]*?<\/a><\/div><\/details>/g;
   let group = '';
   let archiveIndex = 0;
@@ -281,12 +323,15 @@ function initialize() {
   }
 
   fs.writeFileSync(path.join(contentDir, '07-contatti.md'), serialize({
+    attiva: true,
     eyebrow: stripTags(extract(/section-heading[\s\S]*?<p class="eyebrow">([\s\S]*?)<\/p>/, contactHtml, 'contatti eyebrow')),
     titolo: stripTags(extract(/<h2[^>]*>([\s\S]*?)<\/h2>/, contactHtml, 'contatti titolo')),
+    introduzione: htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, contactHtml, 'contatti introduzione')),
+    nota: '',
     link: extract(/<a class="button"[^>]*href="([^"]+)"/, contactHtml, 'contatti link'),
     etichetta_link: stripTags(extract(/<a class="button"[^>]*>([\s\S]*?)<span/, contactHtml, 'contatti etichetta')),
     nuova_scheda: /<a class="button"[^>]*target\s*=\s*(?:"_blank"|blank)/i.test(contactHtml)
-  }, htmlInlineToMarkdown(extract(/<p class="lead">([\s\S]*?)<\/p>/, contactHtml, 'contatti introduzione'))));
+  }));
   console.log(`Estratti ${7 + initiativeMatches.length + eventMatches.length + archiveIndex} file Markdown dall'index.html attuale.`);
 }
 

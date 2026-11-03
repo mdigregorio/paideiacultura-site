@@ -10,6 +10,12 @@ const js = fs.readFileSync(path.join(site, 'assets', 'site.js'), 'utf8');
 const contentRoot = path.join(site, 'contenuti');
 const contentFiles = fs.readdirSync(contentRoot, { recursive: true })
   .map(String).filter(file => file.endsWith('.md'));
+const readMeta = file => {
+  const source = fs.readFileSync(path.join(contentRoot, file), 'utf8').replace(/\r/g, '');
+  const match = source.match(/^---\n([\s\S]*?)\n---/);
+  assert.ok(match, `Intestazione mancante: ${file}`);
+  return JSON.parse(match[1]);
+};
 
 assert.ok(contentFiles.length >= 7, 'File Markdown dei contenuti mancanti');
 assert.ok(!html.includes('{{CONTENUTO}}'), 'Indice non rigenerato dal modello');
@@ -46,11 +52,31 @@ assert.ok(html.includes('class="skip-link"'));
 assert.ok(html.includes('Content-Security-Policy'));
 for (const [, tag] of html.matchAll(/(<img\b[^>]+>)/g)) assert.match(tag, /\balt="[^"]*"/, 'Immagine senza testo alternativo');
 
+const sectionFiles = {
+  manifesto: '02-manifesto.md',
+  'chi-siamo': '03-chi-siamo.md',
+  formazione: '04-formazione.md',
+  convegni: '05-convegni.md',
+  archivio: '06-archivio.md',
+  contatti: '07-contatti.md'
+};
+for (const [id, file] of Object.entries(sectionFiles)) {
+  const meta = readMeta(file);
+  assert.equal(typeof meta.attiva, 'boolean', `Campo attiva mancante o non booleano: ${file}`);
+  assert.equal(typeof meta.introduzione, 'string', `Campo introduzione mancante: ${file}`);
+  assert.equal(typeof meta.nota, 'string', `Campo nota mancante: ${file}`);
+  const active = meta.attiva;
+  assert.equal(html.includes(`id="${id}"`), active, `Stato della sezione non rispettato: ${id}`);
+  assert.equal(html.includes(`href="#${id}"`), active, `Voce di menu non coerente: ${id}`);
+}
+
 const archiveSources = contentFiles.filter(file => file.startsWith('archivio\\') || file.startsWith('archivio/'));
-for (const file of archiveSources) {
-  const source = fs.readFileSync(path.join(contentRoot, file), 'utf8');
-  const id = source.match(/"source_id"\s*:\s*"([^"]+)"/)?.[1];
-  assert.ok(id && html.includes(`data-source-id="${id}"`), `Archivio non pubblicato: ${file}`);
+if (readMeta(sectionFiles.archivio).attiva !== false) {
+  for (const file of archiveSources) {
+    const source = fs.readFileSync(path.join(contentRoot, file), 'utf8');
+    const id = source.match(/"source_id"\s*:\s*"([^"]+)"/)?.[1];
+    assert.ok(id && html.includes(`data-source-id="${id}"`), `Archivio non pubblicato: ${file}`);
+  }
 }
 
 const publicFiles = fs.readdirSync(site, { recursive: true }).map(String);
