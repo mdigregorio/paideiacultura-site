@@ -1,6 +1,9 @@
 ---
 {
+  "attiva": true,
   "eyebrow": "Scuole e iniziative",
-  "titolo": "La formazione"
+  "titolo": "La formazione",
+  "introduzione": "",
+  "nota": ""
 }
 ---

@@ -1,8 +1,10 @@
 ---
 {
+  "attiva": true,
   "eyebrow": "Le nostre ragioni",
   "titolo": "Il nostro manifesto",
   "introduzione": "Un’educazione di ampio respiro, una relazione viva tra chi insegna e chi impara.",
+  "nota": "",
   "etichetta_apertura": "Leggi il manifesto integrale"
 }
 ---

@@ -54,8 +54,51 @@ mostra il banner, mentre:
 
 lo nasconde completamente senza cancellarne testi e collegamenti. Nello stesso
 file si possono modificare titolo, data, luogo, link per l'iscrizione e percorso
-della locandina. Caricare il PDF indicato nella cartella `uploads/` prima di
-attivare la notizia.
+della locandina. I campi `immagine` e `immagine_alt` controllano la fotografia
+mostrata sotto data e luogo; impostando `immagine` a una stringa vuota (`""`),
+la fotografia viene omessa. Caricare PDF e immagine indicati nella cartella
+`uploads/` prima di attivare la notizia.
+
+## Attivare o disattivare le sezioni
+
+Le sezioni principali dal manifesto ai contatti hanno lo stesso interruttore
+nel blocco JSON iniziale:
+
+```json
+"attiva": true
+```
+
+Per nascondere temporaneamente una sezione, impostarlo a `false` nel relativo
+file e salvare il commit. Il generatore rimuove insieme la sezione, la sua voce
+dal menu e gli eventuali collegamenti interni che altrimenti resterebbero
+interrotti. I testi rimangono conservati nei file Markdown.
+
+| Sezione | File |
+| --- | --- |
+| Manifesto | `02-manifesto.md` |
+| Chi siamo | `03-chi-siamo.md` |
+| Formazione | `04-formazione.md` |
+| Convegni | `05-convegni.md` |
+| Archivio | `06-archivio.md` |
+| Contatti | `07-contatti.md` |
+
+La home e il piè di pagina restano sempre pubblicati. Per riattivare una
+sezione basta riportare `attiva` a `true`.
+
+## Introduzione e nota delle sezioni
+
+Negli stessi sei file, i campi `introduzione` e `nota` funzionano allo stesso
+modo per ogni sezione:
+
+```json
+"introduzione": "Testo introduttivo mostrato sotto il titolo.",
+"nota": "Avviso breve mostrato subito sotto l’introduzione."
+```
+
+Entrambi accettano anche la formattazione Markdown semplice, per esempio
+`**grassetto**` e `[collegamenti](https://www.esempio.it/)`. Se un testo non
+serve, lasciare il valore vuoto (`""`): il relativo spazio non viene creato
+nella pagina. La `nota` usa lo stile evidenziato già presente in “Chi siamo”.
 
 ## Pubblicazione
 

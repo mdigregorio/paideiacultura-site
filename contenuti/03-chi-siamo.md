@@ -1,5 +1,6 @@
 ---
 {
+  "attiva": true,
   "eyebrow": "L’associazione",
   "titolo": "Chi siamo",
   "introduzione": "",
