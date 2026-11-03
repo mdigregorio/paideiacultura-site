@@ -1,7 +1,8 @@
 ---
 {
   "eyebrow": "Incontri e riflessioni",
-  "titolo": "Convegni"
+  "titolo": "Convegni",
+  "nota": "Sezione in aggiornamento"
 }
 ---
 
