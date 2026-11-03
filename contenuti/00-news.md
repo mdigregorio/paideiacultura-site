@@ -10,7 +10,9 @@
   "iscrizione_url": "https://it.surveymonkey.com/r/AlbertoMarradi",
   "iscrizione_testo": "Iscriviti all’evento",
   "locandina": "https://www.paideiascuoleestive.it/public/download/locandina-marradi-2026.pdf",
-  "locandina_testo": "Scarica la locandina"
+  "locandina_testo": "Scarica la locandina",
+  "immagine": "uploads/2026/locandina-marradi-2026.jpg",
+  "immagine_alt": "Alberto Marradi"
 }
 ---
 
