@@ -14,6 +14,6 @@
 }
 ---
 
-Una giornata di studi dedicata ad Alberto Marradi, professore emerito dell’Università di Firenze. Allieve, allievi e colleghe e colleghi ne ricorderanno l’attività di maestro e la dedizione all’insegnamento, fatto di lezioni, dialoghi e lavoro sul campo.
+Alberto Marradi, professore emerito dell’Università di Firenze, è mancato da pochi mesi. Un piccolo gruppo di suoi allievi ha preso l'iniziativa di questa giornata a lui dedicata, cui invitare tutti coloro che hanno voglia di condividere testimonianze della sua attività di maestro; ricordando Marradi e la sua istancabile dedizione all'insegnamento, fatto di lezioni, dialoghi e lavoro sul campo.
 
 La partecipazione è gratuita, in presenza o in videoconferenza. Le iscrizioni in presenza saranno accolte fino a esaurimento dei posti disponibili.
