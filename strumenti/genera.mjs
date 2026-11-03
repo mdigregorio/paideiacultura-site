@@ -109,6 +109,7 @@ function readContent(relative) {
 const sectionHeading = (number, eyebrow, title, id) => `<div class="section-heading"><span class="section-number" aria-hidden="true">${number}</span><div><p class="eyebrow">${escapeHtml(eyebrow)}</p><h2 id="titolo-${id}">${escapeHtml(title)}</h2></div></div>`;
 
 function renderSite() {
+  const news = readContent('00-news.md');
   const home = readContent('01-home.md');
   const manifesto = readContent('02-manifesto.md');
   const about = readContent('03-chi-siamo.md');
@@ -123,7 +124,27 @@ function renderSite() {
 
   const people = about.meta.direttivo.map(person => `<div><dt>${escapeHtml(person.ruolo)}</dt><dd>${escapeHtml(person.nome)}<span>${escapeHtml(person.istituzione)}</span></dd></div>`).join('');
   const members = about.meta.soci.map(name => `<li>${escapeHtml(name)}</li>`).join('');
+  const newsSection = news.meta.attiva ? `<aside class="news-banner section" aria-labelledby="titolo-news">
+      <div class="news-layout">
+        <div class="news-copy">
+          <p class="eyebrow">${escapeHtml(news.meta.etichetta)}</p>
+          <h2 id="titolo-news">${escapeHtml(news.meta.titolo)}</h2>
+          <p class="news-subtitle">${escapeHtml(news.meta.sottotitolo)}</p>
+          <div class="news-description">${markdownToHtml(news.body)}</div>
+        </div>
+        <div class="news-details">
+          <p><strong>Quando</strong><time datetime="${escapeHtml(news.meta.data_iso)}">${escapeHtml(news.meta.data)}</time></p>
+          <p><strong>Dove</strong><span>${escapeHtml(news.meta.luogo)}</span></p>
+        </div>
+      </div>
+      <div class="news-actions">
+        <a class="button" href="${escapeHtml(news.meta.iscrizione_url)}">${escapeHtml(news.meta.iscrizione_testo)} <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="${escapeHtml(news.meta.locandina)}" download>${escapeHtml(news.meta.locandina_testo)} <span class="filetype">PDF</span></a>
+      </div>
+    </aside>` : '';
+
   const sections = [
+    newsSection,
     `<section class="hero section" aria-labelledby="titolo">
       <p class="eyebrow">${escapeHtml(home.meta.eyebrow)}</p>
       <h1 id="titolo">${home.meta.titolo_html}</h1>
@@ -165,12 +186,19 @@ function renderSite() {
       <p class="lead">${inlineMarkdown(contact.body)}</p>
       <a class="button"${contact.meta.nuova_scheda ? ' target="_blank" rel="noopener"' : ''} href="${escapeHtml(contact.meta.link)}">${escapeHtml(contact.meta.etichetta_link)} <span aria-hidden="true">↗</span></a>
     </section>`
-  ].join('\n');
+  ].filter(Boolean).join('\n');
 
   const template = fs.readFileSync(templateFile, 'utf8');
   if (!template.includes('{{CONTENUTO}}')) throw new Error('Segnaposto {{CONTENUTO}} mancante in modello.html');
-  fs.writeFileSync(outputFile, template.replace('{{CONTENUTO}}', sections));
-  console.log(`Creato ${path.relative(site, outputFile)} da ${7 + initiatives.length + events.length + archiveEntries.length} file Markdown.`);
+  const generated = template.replace('{{CONTENUTO}}', sections);
+  if (process.argv.includes('--controlla')) {
+    if (news.meta.attiva && !generated.includes('class="news-banner section"')) throw new Error('Banner news non generato.');
+    if (!news.meta.attiva && generated.includes('class="news-banner section"')) throw new Error('Banner news presente nonostante attiva=false.');
+    console.log(`Controllo completato: banner ${news.meta.attiva ? 'attivo' : 'disattivato'}, ${generated.length} caratteri HTML.`);
+    return;
+  }
+  fs.writeFileSync(outputFile, generated);
+  console.log(`Creato ${path.relative(site, outputFile)} da ${8 + initiatives.length + events.length + archiveEntries.length} file Markdown.`);
 }
 
 function extract(pattern, source, label) {
