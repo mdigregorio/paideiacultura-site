@@ -3,8 +3,8 @@
   "attiva": true,
   "eyebrow": "L’associazione",
   "titolo": "Chi siamo",
-  "introduzione": "",
-  "nota": "Le informazioni sul direttivo sono in aggiornamento.",
+  "introduzione": "Il direttivo",
+  "nota": "",
   "direttivo": [
     {
       "ruolo": "Presidente",
