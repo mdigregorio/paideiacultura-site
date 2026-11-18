@@ -138,7 +138,7 @@ function renderSite() {
     const name = escapeHtml(person.nome);
     const profileType = /\.pdf(?:[?#]|$)/i.test(person.profilo ?? '') ? 'curriculum istituzionale (PDF)' : 'profilo istituzionale';
     const profile = person.profilo
-      ? `<a href="${escapeHtml(person.profilo)}" aria-label="${name} — ${profileType}">${name}</a>`
+      ? `<a href="${escapeHtml(person.profilo)}" target="_blank" rel="noopener noreferrer" aria-label="${name} — ${profileType} (si apre in una nuova scheda)">${name}</a>`
       : name;
     const memorial = !person.deceduto ? '' : person.ricordo
       ? ` <a class="member-memorial" href="${escapeHtml(person.ricordo)}" aria-label="${name} — in memoria">†</a>`
