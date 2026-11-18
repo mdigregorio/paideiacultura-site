@@ -37,8 +37,12 @@ Non caricare `backup-wordpress`: il backup e il database non fanno parte del sit
   `contenuti/archivio/` e pubblicati in pannelli espandibili. Le ancore aprono
   automaticamente il documento collegato quando JavaScript è attivo.
 - Il manifesto duplicato nel database è stato riunito nella versione della home.
-- I dati del direttivo e dei soci provengono dal contenuto del 2018. La data è resa
-  esplicita: occorre fornire le informazioni aggiornate per presentarli come attuali.
+- L'elenco dei 50 soci è aggiornato al documento fornito dall'associazione,
+  integrato con i nominativi e i numeri di tessera comunicati il 18 novembre 2026.
+  Si può ordinare per cognome o per tessera; i nomi collegati rimandano a pagine
+  o curriculum degli atenei e degli enti di ricerca verificati. Il simbolo †
+  indica i soci scomparsi.
+  Le informazioni sul direttivo sono ancora in aggiornamento.
 - Il modulo WordPress non è trasferibile senza un servizio di invio. Per ora
   rimane il collegamento Facebook originale. Si può aggiungere un indirizzo email
   pubblico con un semplice collegamento `mailto:`.

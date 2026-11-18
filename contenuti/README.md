@@ -100,6 +100,37 @@ Entrambi accettano anche la formattazione Markdown semplice, per esempio
 serve, lasciare il valore vuoto (`""`): il relativo spazio non viene creato
 nella pagina. La `nota` usa lo stile evidenziato già presente in “Chi siamo”.
 
+## Aggiornare i soci
+
+In `03-chi-siamo.md`, ogni voce di `soci` contiene i dati di una persona:
+
+```json
+{
+  "id": 45,
+  "nome": "Marco Di Gregorio",
+  "cognome": "Di Gregorio",
+  "profilo": "https://www.iris.unisa.it/cris/rp/rp03640",
+  "deceduto": false
+}
+```
+
+`id` è il numero di tessera e deve restare associato alla persona anche quando
+si cambia l'ordine. Non rinumerare le tessere per eliminare eventuali salti.
+`cognome` comprende anche le particelle e i cognomi composti, per esempio
+`Di Gregorio`, `Delli Paoli` e `Parra Saiani`. `profilo` contiene il collegamento
+verificato alla pagina personale, al catalogo di ricerca o al curriculum
+pubblicato su un sito universitario o dell'ente di ricerca di appartenenza;
+lasciare `""` quando non disponibile.
+Non inserire indirizzi email nel campo del profilo.
+
+Per una persona scomparsa, impostare `deceduto` a `true`: il nome sarà seguito
+dal simbolo †. Il campo facoltativo `ricordo` può contenere il collegamento
+al ricordo pubblicato dall'ateneo, che viene aperto dal simbolo †.
+
+La pagina mostra inizialmente l'elenco in ordine alfabetico per cognome.
+Il selettore consente di passare all'ordine numerico per tessera. Senza
+JavaScript, l'elenco rimane leggibile in ordine alfabetico.
+
 ## Pubblicazione
 
 Quando si salva una modifica nel ramo `main`, il flusso **Genera e pubblica il

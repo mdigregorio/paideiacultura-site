@@ -44,7 +44,7 @@ for (const [, value] of css.matchAll(/url\(['"]?([^'"\)]+)/g)) {
 
 assert.doesNotMatch(html, /<(iframe|form|object|embed)\b|\son[a-z]+=/i);
 assert.doesNotMatch(js, /document\.cookie|localStorage|sessionStorage|indexedDB|fetch\(|XMLHttpRequest|sendBeacon/);
-assert.doesNotMatch(html, /wp-content\/uploads/i, 'È rimasto un vecchio percorso WordPress');
+assert.doesNotMatch(html, /\b(?:href|src)="(?!https?:)[^"]*wp-content\/uploads/i, 'È rimasto un vecchio percorso WordPress locale');
 assert.equal((html.match(/<h1\b/g) ?? []).length, 1, 'Deve esserci un solo H1');
 assert.ok(html.includes('<html lang="it">'));
 assert.ok(html.includes('name="viewport"'));

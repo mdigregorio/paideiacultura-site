@@ -130,7 +130,22 @@ function renderSite() {
   const archiveEntries = fs.readdirSync(path.join(contentDir, 'archivio')).filter(name => name.endsWith('.md')).sort().map(name => readContent(path.join('archivio', name)));
 
   const people = about.meta.direttivo.map(person => `<div><dt>${escapeHtml(person.ruolo)}</dt><dd>${escapeHtml(person.nome)}<span>${escapeHtml(person.istituzione)}</span></dd></div>`).join('');
-  const members = about.meta.soci.map(name => `<li>${escapeHtml(name)}</li>`).join('');
+  const memberCollator = new Intl.Collator('it', { sensitivity: 'base' });
+  const memberData = about.meta.soci.map(person => typeof person === 'string'
+    ? { nome: person, cognome: person }
+    : person).sort((a, b) => memberCollator.compare(a.cognome, b.cognome) || memberCollator.compare(a.nome, b.nome));
+  const members = memberData.map(person => {
+    const name = escapeHtml(person.nome);
+    const profileType = /\.pdf(?:[?#]|$)/i.test(person.profilo ?? '') ? 'curriculum istituzionale (PDF)' : 'profilo istituzionale';
+    const profile = person.profilo
+      ? `<a href="${escapeHtml(person.profilo)}" aria-label="${name} — ${profileType}">${name}</a>`
+      : name;
+    const memorial = !person.deceduto ? '' : person.ricordo
+      ? ` <a class="member-memorial" href="${escapeHtml(person.ricordo)}" aria-label="${name} — in memoria">†</a>`
+      : ' <span class="member-memorial" role="img" aria-label="In memoria">†</span>';
+    const card = Number.isInteger(person.id) ? `<span class="member-card">Tessera ${person.id}</span>` : '';
+    return `<li data-cognome="${escapeHtml(person.cognome)}" data-nome="${name}" data-tessera="${person.id ?? ''}"><span class="member-name">${profile}${memorial}</span>${card}</li>`;
+  }).join('');
   const newsSection = news.meta.attiva ? `<aside class="news-banner section" aria-labelledby="titolo-news">
       <div class="news-layout">
         <div class="news-copy">
@@ -174,7 +189,12 @@ function renderSite() {
       ${renderIntroduction(about)}
       ${renderNote(about)}
       <dl class="people">${people}</dl>
-      <details class="plain-details"><summary>Le socie e i soci <span class="disclosure" aria-hidden="true"></span></summary><ul class="members">${members}</ul></details>
+      <details class="plain-details" id="elenco-soci"><summary>Le socie e i soci <span class="disclosure" aria-hidden="true"></span></summary>
+        <div class="members-controls" hidden><label for="ordine-soci">Ordina per</label><select id="ordine-soci" aria-controls="soci"><option value="cognome">Cognome</option><option value="tessera">Numero di tessera</option></select></div>
+        <p class="members-note">I nomi collegati rimandano ai profili istituzionali. † In memoria.</p>
+        <p class="sr-only" id="stato-ordine-soci" role="status"></p>
+        <ul class="members" id="soci">${members}</ul>
+      </details>
       <details class="plain-details"><summary>I direttivi precedenti <span class="disclosure" aria-hidden="true"></span></summary><div class="prose">${markdownToHtml(about.body)}</div></details>
     </section>` : '',
     isActive(formation) ? `<section class="section" id="formazione" aria-labelledby="titolo-formazione" data-source-id="34">
@@ -218,6 +238,7 @@ function renderSite() {
   for (const id of inactiveAnchors) {
     generated = generated.replace(new RegExp(`<a\\b[^>]*href="#${id}"[^>]*>([\\s\\S]*?)</a>`, 'g'), '$1');
   }
+  generated = generated.replace(/[\t ]+$/gm, '');
   if (process.argv.includes('--controlla')) {
     if (news.meta.attiva && !generated.includes('class="news-banner section"')) throw new Error('Banner news non generato.');
     if (!news.meta.attiva && generated.includes('class="news-banner section"')) throw new Error('Banner news presente nonostante attiva=false.');

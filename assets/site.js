@@ -54,6 +54,28 @@ document.addEventListener('click', event => {
 window.addEventListener('hashchange', () => reveal(anchorTarget(location.hash), true));
 if (location.hash) reveal(anchorTarget(location.hash));
 
+const membersOrder = document.getElementById('ordine-soci');
+const membersList = document.getElementById('soci');
+if (membersOrder && membersList) {
+  const collator = new Intl.Collator('it', { sensitivity: 'base' });
+  const members = [...membersList.children];
+  const compareSurnames = (a, b) => collator.compare(a.dataset.cognome, b.dataset.cognome)
+    || collator.compare(a.dataset.nome, b.dataset.nome);
+  const cardNumber = member => member.dataset.tessera ? Number(member.dataset.tessera) : Infinity;
+  const sortMembers = () => {
+    const byCard = membersOrder.value === 'tessera';
+    const ordered = [...members].sort((a, b) => (byCard ? cardNumber(a) - cardNumber(b) : 0)
+      || compareSurnames(a, b));
+    membersList.replaceChildren(...ordered);
+    document.getElementById('stato-ordine-soci').textContent = byCard
+      ? 'Elenco ordinato per numero di tessera.'
+      : 'Elenco ordinato per cognome.';
+  };
+  membersOrder.closest('.members-controls').hidden = false;
+  membersOrder.addEventListener('change', sortMembers);
+  sortMembers();
+}
+
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
     const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
