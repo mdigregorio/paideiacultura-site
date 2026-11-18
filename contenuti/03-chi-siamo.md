@@ -69,42 +69,42 @@
       "id": 41,
       "nome": "Livia Bruscaglioni",
       "cognome": "Bruscaglioni",
-      "profilo": "https://flore.unifi.it/cris/rp/rp00993",
+      "profilo": "https://www.dsps.unifi.it/vp-134-livia-bruscaglioni.html",
       "deceduto": false
     },
     {
       "id": 51,
       "nome": "Walter Antonio Canu",
       "cognome": "Canu",
-      "profilo": "https://www.uniurb.it/it/cdocs/CWEB/14439-cv.pdf",
+      "profilo": "https://phd.uniroma1.it/web/WALTER-ANTONIO-CANU_nP1638567_.aspx",
       "deceduto": false
     },
     {
       "id": 20,
       "nome": "Amalia Caputo",
       "cognome": "Caputo",
-      "profilo": "https://www.iris.unina.it/cris/rp/rp12923",
+      "profilo": "https://www.docenti.unina.it/amalia.caputo",
       "deceduto": false
     },
     {
       "id": 24,
       "nome": "Erika Cellini",
       "cognome": "Cellini",
-      "profilo": "https://cercachi.unifi.it/p-doc2-2012-200011-C-3f2a3d323b282f.html",
+      "profilo": "https://cercachi.unifi.it/p-doc2-2019-B192-A-3f2a3d323b282f-0.html",
       "deceduto": false
     },
     {
       "id": 50,
       "nome": "Noemi Crescentini",
       "cognome": "Crescentini",
-      "profilo": "https://docente.unife.it/noemi.crescentini",
+      "profilo": "https://www.docenti.unina.it/noemi.crescentini",
       "deceduto": false
     },
     {
       "id": 52,
       "nome": "Valentina D'Auria",
       "cognome": "D'Auria",
-      "profilo": "https://www.iris.unisa.it/cris/rp/rp78275",
+      "profilo": "https://rubrica.unisa.it/persone?matricola=045819",
       "deceduto": false
     },
     {
@@ -118,21 +118,21 @@
       "id": 11,
       "nome": "Giovanni Delli Zotti",
       "cognome": "Delli Zotti",
-      "profilo": "https://arts.units.it/cris/rp/rp12563",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 47,
       "nome": "Romina Deriu",
       "cognome": "Deriu",
-      "profilo": "https://www.uniss.it/it/ugov/person/934",
+      "profilo": "https://unifind.uniss.it/get/person/003484",
       "deceduto": false
     },
     {
       "id": 45,
       "nome": "Marco Di Gregorio",
       "cognome": "Di Gregorio",
-      "profilo": "https://www.iris.unisa.it/cris/rp/rp03640",
+      "profilo": "https://rubrica.unisa.it/persone?matricola=028673",
       "deceduto": false
     },
     {
@@ -146,7 +146,7 @@
       "id": 53,
       "nome": "Vincenzo Esposito",
       "cognome": "Esposito",
-      "profilo": "https://www.iris.unisa.it/cris/rp/rp30706",
+      "profilo": "",
       "deceduto": false
     },
     {
@@ -167,7 +167,7 @@
       "id": 25,
       "nome": "Renato Grimaldi",
       "cognome": "Grimaldi",
-      "profilo": "https://iris.unito.it/cris/rp/rp19601",
+      "profilo": "https://unifind.unito.it/resource/person/516",
       "deceduto": false
     },
     {
@@ -188,21 +188,21 @@
       "id": 29,
       "nome": "Serena Liani",
       "cognome": "Liani",
-      "profilo": "https://iris.uniroma1.it/cris/rp/rp23499",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 22,
       "nome": "Giovanni Losito",
       "cognome": "Losito",
-      "profilo": "https://iris.uniroma1.it/cris/rp/rp30872",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 31,
       "nome": "Claudia Mariotti",
       "cognome": "Mariotti",
-      "profilo": "https://uniroma3-public.gomp.it/Docenti/Render.aspx?UID=4c897059-437e-4ecd-8b84-bf569d351170",
+      "profilo": "https://romecenter.uark.edu/faculty-in-rome/cmariotti.php",
       "deceduto": false
     },
     {
@@ -217,21 +217,21 @@
       "id": 10,
       "nome": "Fabrizio Martire",
       "cognome": "Martire",
-      "profilo": "https://corsidilaurea.uniroma1.it/it/users/fabriziomartireuniroma1it",
+      "profilo": "https://corsidilaurea.uniroma1.it/it/lecturer/6d981ff3fb8ebd96693a4b9803a323afa03e7f78d458062688797be9",
       "deceduto": false
     },
     {
       "id": 37,
       "nome": "Beba Molinari",
       "cognome": "Molinari",
-      "profilo": "https://directory.uniroma2.it/chart/dettagliDocente/23151",
+      "profilo": "https://dip.storia.uniroma2.it/beba-molinari/",
       "deceduto": false
     },
     {
       "id": 16,
       "nome": "Paolo Montesperelli",
       "cognome": "Montesperelli",
-      "profilo": "https://iris.uniroma1.it/cris/rp/rp32960",
+      "profilo": "",
       "deceduto": false
     },
     {
@@ -245,42 +245,42 @@
       "id": 39,
       "nome": "Daniele Nigris",
       "cognome": "Nigris",
-      "profilo": "https://spgi.unipd.it/category/ruoli/personale-docente?key=F43DAD2130DBC63A1521FB957D7E9F88",
+      "profilo": "https://www.unipd.it/contatti/daniele.nigris",
       "deceduto": false
     },
     {
       "id": 46,
       "nome": "Andrea Orio",
       "cognome": "Orio",
-      "profilo": "https://www.iris.unisa.it/cris/rp/rp71293",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 49,
       "nome": "Giuseppe Michele Padricelli",
       "cognome": "Padricelli",
-      "profilo": "https://www.uniurb.it/it/cdocs/CWEB/14331-cv.pdf",
+      "profilo": "https://www.docenti.unina.it/giuseppemichele.padricelli",
       "deceduto": false
     },
     {
       "id": 27,
       "nome": "Marco Palmieri",
       "cognome": "Palmieri",
-      "profilo": "https://corsidilaurea.uniroma1.it/it/lecturer/d9686291c2e434debd41ef25180702fdd8125833b5ee9b03eba99c61",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 14,
       "nome": "Mauro Palumbo",
       "cognome": "Palumbo",
-      "profilo": "https://amas.unige.it/sites/amas.unige.it/files/persone/palumbo_cv_it.pdf",
+      "profilo": "https://rubrica.unige.it/personale/VUNDWl5g",
       "deceduto": false
     },
     {
       "id": 42,
       "nome": "Tania Parisi",
       "cognome": "Parisi",
-      "profilo": "https://iris.unito.it/cris/rp/rp19177",
+      "profilo": "https://www.dfe.unito.it/persone/tania.parisi",
       "deceduto": false
     },
     {
@@ -294,21 +294,21 @@
       "id": 5,
       "nome": "Fiorenzo Parziale",
       "cognome": "Parziale",
-      "profilo": "https://corsidilaurea.uniroma1.it/it/lecturer/f1aa4407d5fbe3b3e0f009d1f736a418d3fbeff11df866dd9209f753",
+      "profilo": "https://phd.uniroma1.it/web/Fiorenzo-Parziale_nC2485_IT.aspx",
       "deceduto": false
     },
     {
       "id": 4,
       "nome": "Maria Concetta Pitrone",
       "cognome": "Pitrone",
-      "profilo": "https://iris.uniroma1.it/cris/rp/rp48597",
+      "profilo": "",
       "deceduto": false
     },
     {
       "id": 2,
       "nome": "Gabriella Punziano",
       "cognome": "Punziano",
-      "profilo": "https://iris.unina.it/cris/rp/rp15809",
+      "profilo": "https://www.docenti.unina.it/gabriella.punziano",
       "deceduto": false
     },
     {
@@ -336,7 +336,7 @@
       "id": 7,
       "nome": "Stefano Scarcella Prandstraller",
       "cognome": "Scarcella Prandstraller",
-      "profilo": "https://corsidilaurea.uniroma1.it/it/lecturer/c934aec85d0bbd4c881d16c73e421f0a2e18e39cbdc56a08caf3288f",
+      "profilo": "",
       "deceduto": false
     },
     {
@@ -359,13 +359,13 @@
       "cognome": "Vergani",
       "profilo": "",
       "deceduto": true,
-      "ricordo": "https://centridiricerca.unicatt.it/wwell/it/news-ed-eventi/eventi/da-dove-siamo-partiti-dove-stiamo-andando-approcci-alla-valutazione.html"
+      "ricordo": ""
     },
     {
       "id": 38,
       "nome": "Giulio Vidotto",
       "cognome": "Vidotto",
-      "profilo": "https://www.research.unipd.it/cris/rp/rp04298",
+      "profilo": "",
       "deceduto": false
     },
     {
