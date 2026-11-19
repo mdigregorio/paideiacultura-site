@@ -97,6 +97,41 @@ details[open]>summary{margin-bottom:1rem}
 .members-controls label,.members-note{font-size:.875rem}
 .members-controls select{min-width:0;max-width:100%;min-height:2.75rem;padding:.45rem 2rem .45rem .7rem;border:1px solid var(--muted);border-radius:.25rem;background:var(--paper);color:var(--ink);font:inherit}
 .members-note{color:var(--muted);margin-bottom:1rem}
+.training-catalog{margin-top:1.8rem;min-width:0;scroll-margin-top:2rem}
+.catalog-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-bottom:1.2rem;align-items:end}
+.catalog-controls label{display:grid;gap:.35rem;font-size:.825rem;color:var(--ink);min-width:0}
+.catalog-controls .catalog-search{grid-column:span 2}
+.catalog-controls>button{justify-self:start}
+.catalog-controls input,.catalog-controls select{width:100%;min-width:0;max-width:100%;min-height:2.75rem;padding:.55rem .7rem;border:1px solid var(--muted);border-radius:.2rem;background:var(--paper);color:var(--ink);font:1rem var(--sans)}
+.catalog-controls button,.catalog-actions button{min-height:2.75rem;padding:.6rem 1rem;border:1px solid var(--green);background:var(--paper);color:var(--green);font:.875rem var(--sans);cursor:pointer;white-space:normal}
+.catalog-controls button:hover,.catalog-actions button:hover{background:var(--soft)}
+.catalog-results{font-size:.825rem;color:var(--muted);margin:0 0 1rem}
+.catalog-list{min-width:0}
+.catalog-list>h3{font:1.5rem var(--serif);margin:1.8rem 0 1rem}
+.course-entry,.edition-entry{border-top:1px solid var(--line);scroll-margin-top:2rem;min-width:0}
+.course-entry:last-child,.edition-entry:last-child{border-bottom:1px solid var(--line)}
+.course-entry>summary,.edition-entry>summary{display:grid;grid-template-columns:3.8rem minmax(0,1fr) 1.35rem;gap:.7rem 1rem;align-items:start;font-size:.95rem;padding:1rem 0}
+.course-entry>summary>.entry-date,.edition-entry>summary>.entry-date{font-variant-numeric:tabular-nums;line-height:1.7}
+.course-entry>summary>.disclosure,.edition-entry>summary>.disclosure{margin-top:.15rem}
+.course-entry>summary>span:nth-child(2),.edition-entry>summary>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.catalog-body{padding:0 0 1.5rem;min-width:0}
+.catalog-meta{font-size:.825rem;color:var(--muted);margin:0 0 .8rem;overflow-wrap:anywhere}
+.catalog-entry-title>.catalog-meta,.catalog-modules .catalog-meta{display:block;margin:.3rem 0 0}
+.catalog-overview{font-size:.9rem;color:var(--green);margin-bottom:1.2rem}
+.catalog-note{font-size:.825rem;color:var(--muted);margin-bottom:1.4rem}
+.historic-documents{margin-top:2rem}
+.catalog-teachers{list-style:none;padding:0;margin:.75rem 0 1.1rem;display:grid;gap:.6rem;font-size:.925rem}
+.catalog-teachers li{padding:0}
+.catalog-teachers span{display:block;font-size:.8rem;color:var(--muted)}
+.catalog-modules{list-style:none;padding:0;margin:1rem 0;display:grid;gap:1rem}
+.catalog-modules>li{padding:.8rem 0 0;border-top:1px solid var(--line);min-width:0}
+.catalog-modules a{display:inline-block;min-height:2.75rem;padding:.35rem 0;font-size:.925rem;overflow-wrap:anywhere}
+.catalog-status{display:inline-block;font:.75rem/1.5 var(--sans);color:var(--ink);background:var(--soft);padding:.15rem .45rem;margin:.3rem .35rem .3rem 0;vertical-align:middle}
+.catalog-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin:1.2rem 0}
+.catalog-body>a{display:inline-flex;min-height:2.75rem;align-items:center;font-size:.875rem}
+@media(max-width:1050px){.catalog-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-controls .catalog-search{grid-column:auto}}
+@media(max-width:760px){.training-catalog,.course-entry,.edition-entry{scroll-margin-top:6rem}}
+@media(max-width:480px){.catalog-controls{grid-template-columns:minmax(0,1fr);gap:.8rem}.catalog-controls .catalog-search{grid-column:auto}.catalog-controls button{justify-self:start}.course-entry>summary,.edition-entry>summary{grid-template-columns:minmax(0,1fr) 1.35rem;gap:.2rem .8rem}.course-entry>summary>.entry-date,.edition-entry>summary>.entry-date{grid-column:1}.course-entry>summary>span:nth-child(2),.edition-entry>summary>span:nth-child(2){grid-column:1}.course-entry>summary>.disclosure,.edition-entry>summary>.disclosure{grid-column:2;grid-row:1/3;align-self:center}.catalog-actions button{max-width:100%}}
 .initiatives{margin-top:2rem}
 .initiative{border-top:1px solid var(--line);padding-top:1.7rem;margin-top:1.6rem}
 .initiative>.eyebrow{margin-bottom:.5rem}

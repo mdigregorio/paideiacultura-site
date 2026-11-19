@@ -33,6 +33,13 @@ Non caricare `backup-wordpress`: il backup e il database non fanno parte del sit
 ## Contenuti e revisione editoriale
 
 - Un'unica pagina: manifesto, associazione, formazione, convegni, archivio, contatti.
+- L'archivio della formazione comprende 59 registrazioni di scuole e iniziative
+  e 196 moduli o interventi, dal 1985 al 2025. Si apre per edizione, con una vista
+  alternativa per corso e filtri per anno, iniziativa e ricerca libera.
+  Le registrazioni ripetute sono conservate. Gli stati di annullamento o
+  svolgimento da verificare sono indicati accanto alle voci interessate.
+  Il catalogo è ricavato dall'Excel con `strumenti/importa-formazione.py`;
+  le istruzioni sono in `strumenti/IMPORTAZIONE-FORMAZIONE.md`.
 - I documenti storici mantenuti nella versione modificata sono separati in
   `contenuti/archivio/` e pubblicati in pannelli espandibili. Le ancore aprono
   automaticamente il documento collegato quando JavaScript è attivo.
@@ -63,8 +70,9 @@ HTML semantico con lingua italiana, titoli gerarchici, salto al contenuto,
 controlli nativi, focus visibile, menu da tastiera e supporto al movimento ridotto.
 Il contenuto rimane consultabile senza JavaScript; menu e pannelli usano una
 base HTML funzionante. Nessun cookie, archivio nel browser, analitica, font remoto,
-video incorporato o widget social. I collegamenti esterni si aprono normalmente
-nella stessa scheda e i servizi esterni applicano le proprie condizioni.
+video incorporato o widget social. I collegamenti ai profili dei soci si aprono
+in una nuova scheda; gli altri collegamenti esterni nella stessa scheda.
+I servizi esterni applicano le proprie condizioni.
 
 I PDF/DOC originali sono mantenuti come documenti scaricabili; la loro accessibilità
 interna non è stata corretta o certificata. Le verifiche del sito non equivalgono

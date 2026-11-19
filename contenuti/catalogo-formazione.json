@@ -1,0 +1,4893 @@
+{
+  "versione": 1,
+  "scuole": [
+    {
+      "id": "scuola-002",
+      "origine": "Firenze1985",
+      "anno": 1985,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "L'arte del questionario e dell'intervista, Marradi",
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-014"
+      ]
+    },
+    {
+      "id": "scuola-003",
+      "origine": "Firenze1987",
+      "anno": 1987,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Epistemologia e metodologia, Marradi",
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-015"
+      ]
+    },
+    {
+      "id": "scuola-004",
+      "origine": "Firenze1989",
+      "anno": 1989,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Epistemologia e metodologia, Marradi e Blaikie",
+      "stato": "registrato",
+      "inizio": "1989-05-22",
+      "fine": "1989-06-14",
+      "moduli": [
+        "modulo-016",
+        "modulo-017"
+      ]
+    },
+    {
+      "id": "scuola-005",
+      "origine": "Firenze1990",
+      "anno": 1990,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "L'arte del questionario e dell'intervista, Marradi, Rositi, Montesperelli",
+      "stato": "registrato",
+      "inizio": "1990-06-18",
+      "fine": "1990-06-23",
+      "moduli": [
+        "modulo-018",
+        "modulo-019",
+        "modulo-020"
+      ]
+    },
+    {
+      "id": "scuola-006",
+      "origine": "Firenze1990",
+      "anno": 1990,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Tre mondi, due famiglie, molti livelli, Marradi",
+      "stato": "registrato",
+      "inizio": "1990-10-22",
+      "fine": "1990-10-27",
+      "moduli": [
+        "modulo-021"
+      ]
+    },
+    {
+      "id": "scuola-007",
+      "origine": "Firenze1991",
+      "anno": 1991,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Logica e ricerca, Bruschi",
+      "stato": "registrato",
+      "inizio": "1991-01-07",
+      "fine": "1991-01-12",
+      "moduli": [
+        "modulo-022"
+      ]
+    },
+    {
+      "id": "scuola-008",
+      "origine": "Firenze1991",
+      "anno": 1991,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "The Logic of Causal Modelling, Dreier e Pavone",
+      "stato": "registrato",
+      "inizio": "1991-05-06",
+      "fine": "1991-05-11",
+      "moduli": [
+        "modulo-023",
+        "modulo-024"
+      ]
+    },
+    {
+      "id": "scuola-009",
+      "origine": "Firenze1991",
+      "anno": 1991,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "L'arte del questionario e dell'intervista, Marradi, Montesperelli",
+      "stato": "registrato",
+      "inizio": "1991-10-07",
+      "fine": "1991-10-16",
+      "moduli": [
+        "modulo-025",
+        "modulo-026"
+      ]
+    },
+    {
+      "id": "scuola-010",
+      "origine": "Firenze1992",
+      "anno": 1992,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "I paradossi nelle scienze sociali, Ricolfi",
+      "stato": "registrato",
+      "inizio": "1992-05-04",
+      "fine": "1992-05-08",
+      "moduli": [
+        "modulo-027"
+      ]
+    },
+    {
+      "id": "scuola-011",
+      "origine": "Firenze1992",
+      "anno": 1992,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "L'analisi monovariata, Marradi",
+      "stato": "registrato",
+      "inizio": "1992-11-02",
+      "fine": "1992-11-06",
+      "moduli": [
+        "modulo-028"
+      ]
+    },
+    {
+      "id": "scuola-012",
+      "origine": "Firenze1993",
+      "anno": 1993,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Logical Structure of Scientific Theories, Dreier",
+      "stato": "registrato",
+      "inizio": "1993-01-11",
+      "fine": "1993-01-15",
+      "moduli": [
+        "modulo-029"
+      ]
+    },
+    {
+      "id": "scuola-013",
+      "origine": "Firenze1993",
+      "anno": 1993,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Storicità dei programmi di ricerca, Lentini",
+      "stato": "registrato",
+      "inizio": "1993-10-25",
+      "fine": "1993-10-26",
+      "moduli": [
+        "modulo-030"
+      ]
+    },
+    {
+      "id": "scuola-014",
+      "origine": "Firenze1994",
+      "anno": 1994,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Realtà pensiero linguaggio, Marradi",
+      "stato": "registrato",
+      "inizio": "1994-01-10",
+      "fine": "1994-01-14",
+      "moduli": [
+        "modulo-031"
+      ]
+    },
+    {
+      "id": "scuola-015",
+      "origine": "Firenze1995",
+      "anno": 1995,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Alcune questioni gnoseologiche e metodologiche, Marradi, Fideli, Rodolfi",
+      "stato": "registrato",
+      "inizio": "1995-03-29",
+      "fine": "1995-04-08",
+      "moduli": [
+        "modulo-032",
+        "modulo-033",
+        "modulo-034"
+      ]
+    },
+    {
+      "id": "scuola-016",
+      "origine": "Firenze1995",
+      "anno": 1995,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Analisi monovariata e bivariata, Marradi",
+      "stato": "registrato",
+      "inizio": "1995-10-09",
+      "fine": "1995-10-21",
+      "moduli": [
+        "modulo-035"
+      ]
+    },
+    {
+      "id": "scuola-017",
+      "origine": "Firenze1996",
+      "anno": 1996,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Modelli spaziali di comportamento elettorale, Ricolfi",
+      "stato": "registrato",
+      "inizio": "1996-06-10",
+      "fine": "1996-06-14",
+      "moduli": [
+        "modulo-036"
+      ]
+    },
+    {
+      "id": "scuola-018",
+      "origine": "Firenze1997",
+      "anno": 1997,
+      "luogo": "Sassari",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Concetti di scienza e di metodo, Marradi",
+      "stato": "registrato",
+      "inizio": "1997-05-15",
+      "fine": "1997-05-17",
+      "moduli": [
+        "modulo-037"
+      ]
+    },
+    {
+      "id": "scuola-019",
+      "origine": "Firenze1997",
+      "anno": 1997,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Costruzione di una matrice di dati, Marradi",
+      "stato": "registrato",
+      "inizio": "1997-10-06",
+      "fine": "1997-10-11",
+      "moduli": [
+        "modulo-038"
+      ]
+    },
+    {
+      "id": "scuola-020",
+      "origine": "Firenze1998",
+      "anno": 1998,
+      "luogo": "Firenze",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Analisi monovariata e bivariata, Marradi",
+      "stato": "registrato",
+      "inizio": "1998-01-12",
+      "fine": "1998-01-16",
+      "moduli": [
+        "modulo-039"
+      ]
+    },
+    {
+      "id": "scuola-021",
+      "origine": "Firenze1999",
+      "anno": 1999,
+      "luogo": "Firenze",
+      "categoria": "Scuola invernale di metodologia",
+      "edizione": 1,
+      "struttura": null,
+      "argomento": "Problemi e strumenti della conoscenza",
+      "stato": "registrato",
+      "inizio": "1999-02-01",
+      "fine": "1999-02-06",
+      "moduli": []
+    },
+    {
+      "id": "scuola-022",
+      "origine": "Sassari1999",
+      "anno": 1999,
+      "luogo": "Sassari",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": null,
+      "argomento": "Pre-asserti, asserti, spiegazioni, Marradi",
+      "stato": "registrato",
+      "inizio": "1999-04-26",
+      "fine": "1999-04-30",
+      "moduli": [
+        "modulo-119"
+      ]
+    },
+    {
+      "id": "scuola-023",
+      "origine": "Viterbo1999",
+      "anno": 1999,
+      "luogo": "Viterbo",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 1,
+      "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "1999-09-05",
+      "fine": "1999-09-10",
+      "moduli": [
+        "modulo-178",
+        "modulo-179",
+        "modulo-180"
+      ]
+    },
+    {
+      "id": "scuola-024",
+      "origine": "Cannigione2000",
+      "anno": 2000,
+      "luogo": "Cannigione (SS)",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 2,
+      "struttura": "Hotel Micalosu e spiaggia di Cannigione",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2000-09-04",
+      "fine": "2000-09-09",
+      "moduli": [
+        "modulo-007",
+        "modulo-008",
+        "modulo-009",
+        "modulo-010",
+        "modulo-011",
+        "modulo-012",
+        "modulo-013"
+      ]
+    },
+    {
+      "id": "scuola-025",
+      "origine": "Firenze2000",
+      "anno": 2000,
+      "luogo": "Firenze",
+      "categoria": "Scuola invernale di metodologia",
+      "edizione": 2,
+      "struttura": null,
+      "argomento": "La matrice dei dati e le sue premesse",
+      "stato": "registrato",
+      "inizio": "2000-01-31",
+      "fine": "2000-02-05",
+      "moduli": []
+    },
+    {
+      "id": "scuola-026",
+      "origine": "Roma2001",
+      "anno": 2001,
+      "luogo": "Roma",
+      "categoria": "Scuola invernale di metodologia",
+      "edizione": 3,
+      "struttura": "Facoltà di Sociologia",
+      "argomento": "Fondamenti di analisi dei dati: monovariata e bivariata",
+      "stato": "registrato",
+      "inizio": "2001-01-15",
+      "fine": "2001-01-20",
+      "moduli": [
+        "modulo-109",
+        "modulo-110",
+        "modulo-111",
+        "modulo-112",
+        "modulo-113",
+        "modulo-114",
+        "modulo-115",
+        "modulo-116",
+        "modulo-117",
+        "modulo-118"
+      ]
+    },
+    {
+      "id": "scuola-027",
+      "origine": "Viterbo2001",
+      "anno": 2001,
+      "luogo": "Viterbo",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 3,
+      "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2001-09-10",
+      "fine": "2001-09-15",
+      "moduli": [
+        "modulo-181",
+        "modulo-182",
+        "modulo-183",
+        "modulo-184",
+        "modulo-185",
+        "modulo-186"
+      ]
+    },
+    {
+      "id": "scuola-028",
+      "origine": "Firenze2002",
+      "anno": 2002,
+      "luogo": "Firenze",
+      "categoria": "Scuola invernale di teoria e metodologia sociologica",
+      "edizione": 4,
+      "struttura": "Centro Studium",
+      "argomento": "Costruzione ed uso del questionario",
+      "stato": "registrato",
+      "inizio": "2002-02-05",
+      "fine": "2002-02-09",
+      "moduli": [
+        "modulo-040",
+        "modulo-041",
+        "modulo-042",
+        "modulo-043",
+        "modulo-044",
+        "modulo-045"
+      ]
+    },
+    {
+      "id": "scuola-029",
+      "origine": "Otranto2002",
+      "anno": 2002,
+      "luogo": "Otranto",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 4,
+      "struttura": "Hotel Daniela e spiaggia di Conca Specchiulla",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2002-09-09",
+      "fine": "2002-09-14",
+      "moduli": [
+        "modulo-103",
+        "modulo-104",
+        "modulo-105",
+        "modulo-106",
+        "modulo-107",
+        "modulo-108"
+      ]
+    },
+    {
+      "id": "scuola-030",
+      "origine": "Viterbo2003",
+      "anno": 2003,
+      "luogo": "Viterbo",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 5,
+      "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2003-09-08",
+      "fine": "2003-09-13",
+      "moduli": [
+        "modulo-187",
+        "modulo-188",
+        "modulo-189",
+        "modulo-190",
+        "modulo-191"
+      ]
+    },
+    {
+      "id": "scuola-031",
+      "origine": "Giffoni2004",
+      "anno": 2004,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 1,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-046",
+        "modulo-047",
+        "modulo-048",
+        "modulo-049"
+      ]
+    },
+    {
+      "id": "scuola-032",
+      "origine": "Vietri2004",
+      "anno": 2004,
+      "luogo": "Vietri",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 6,
+      "struttura": "Baia Hotel",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2004-09-20",
+      "fine": "2004-09-25",
+      "moduli": [
+        "modulo-168",
+        "modulo-169",
+        "modulo-170",
+        "modulo-171",
+        "modulo-172",
+        "modulo-173",
+        "modulo-174",
+        "modulo-175",
+        "modulo-176",
+        "modulo-177"
+      ]
+    },
+    {
+      "id": "scuola-033",
+      "origine": "Giffoni2005",
+      "anno": 2005,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 2,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-050",
+        "modulo-051",
+        "modulo-052",
+        "modulo-053",
+        "modulo-054"
+      ]
+    },
+    {
+      "id": "scuola-034",
+      "origine": "Viterbo2005",
+      "anno": 2005,
+      "luogo": "Viterbo",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 7,
+      "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-192"
+      ]
+    },
+    {
+      "id": "scuola-035",
+      "origine": "Calabria2006",
+      "anno": 2006,
+      "luogo": "Calabria",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 8,
+      "struttura": null,
+      "argomento": null,
+      "stato": "da-verificare",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-002",
+        "modulo-003",
+        "modulo-004",
+        "modulo-005",
+        "modulo-006"
+      ]
+    },
+    {
+      "id": "scuola-036",
+      "origine": "Giffoni2006",
+      "anno": 2006,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 3,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-055",
+        "modulo-056",
+        "modulo-057",
+        "modulo-058"
+      ]
+    },
+    {
+      "id": "scuola-037",
+      "origine": "Gorizia2006",
+      "anno": 2006,
+      "luogo": "Gorizia",
+      "categoria": "MetA",
+      "edizione": null,
+      "struttura": "Dottorato in Politiche Transfrontaliere dell'Università di Trieste",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [],
+      "periodo": "19-23 giugno e 9-13 ottobre 2006"
+    },
+    {
+      "id": "scuola-038",
+      "origine": "Giffoni2007",
+      "anno": 2007,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 4,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-059",
+        "modulo-060",
+        "modulo-061"
+      ]
+    },
+    {
+      "id": "scuola-039",
+      "origine": "Viterbo2007",
+      "anno": 2007,
+      "luogo": "Viterbo",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 9,
+      "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
+      "argomento": null,
+      "stato": "da-verificare",
+      "inizio": null,
+      "fine": null,
+      "moduli": []
+    },
+    {
+      "id": "scuola-040",
+      "origine": "Giffoni2008",
+      "anno": 2008,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 5,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-062",
+        "modulo-063",
+        "modulo-064",
+        "modulo-065"
+      ]
+    },
+    {
+      "id": "scuola-041",
+      "origine": "Oliveri2008",
+      "anno": 2008,
+      "luogo": "Oliveri",
+      "categoria": "Scuola estiva di teoria e metodologia sociologica",
+      "edizione": 10,
+      "struttura": "Residence La Tonnara e spiaggia di Oliveri",
+      "argomento": null,
+      "stato": "da-verificare",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-098",
+        "modulo-099",
+        "modulo-100",
+        "modulo-101",
+        "modulo-102"
+      ]
+    },
+    {
+      "id": "scuola-042",
+      "origine": "Giffoni2009",
+      "anno": 2009,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 6,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-066",
+        "modulo-067",
+        "modulo-068",
+        "modulo-069"
+      ]
+    },
+    {
+      "id": "scuola-043",
+      "origine": "Giffoni2010",
+      "anno": 2010,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 7,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-070",
+        "modulo-071",
+        "modulo-072",
+        "modulo-073"
+      ]
+    },
+    {
+      "id": "scuola-044",
+      "origine": "Giffoni2011",
+      "anno": 2011,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 8,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-074",
+        "modulo-075",
+        "modulo-076"
+      ]
+    },
+    {
+      "id": "scuola-045",
+      "origine": "Giffoni2012",
+      "anno": 2012,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 9,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-077",
+        "modulo-078",
+        "modulo-079"
+      ]
+    },
+    {
+      "id": "scuola-046",
+      "origine": "Giffoni2013",
+      "anno": 2013,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 10,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-080",
+        "modulo-081",
+        "modulo-082",
+        "modulo-083",
+        "modulo-084"
+      ]
+    },
+    {
+      "id": "scuola-047",
+      "origine": "Giffoni2014",
+      "anno": 2014,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 11,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-085",
+        "modulo-086",
+        "modulo-087"
+      ]
+    },
+    {
+      "id": "scuola-048",
+      "origine": "Giffoni2015",
+      "anno": 2015,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 12,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-088",
+        "modulo-089",
+        "modulo-090",
+        "modulo-091",
+        "modulo-092",
+        "modulo-093",
+        "modulo-094",
+        "modulo-095"
+      ],
+      "sedi_multiple": true
+    },
+    {
+      "id": "scuola-049",
+      "origine": "Tortorella2015",
+      "anno": 2015,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 13,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [],
+      "sedi_multiple": true
+    },
+    {
+      "id": "scuola-050",
+      "origine": "Giffoni2016",
+      "anno": 2016,
+      "luogo": "Giffoni",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 14,
+      "struttura": "Borgo Terravecchia",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-096",
+        "modulo-097"
+      ],
+      "sedi_multiple": true
+    },
+    {
+      "id": "scuola-051",
+      "origine": "Tortorella2016",
+      "anno": 2016,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 15,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-120",
+        "modulo-121",
+        "modulo-122",
+        "modulo-123",
+        "modulo-124",
+        "modulo-125"
+      ],
+      "sedi_multiple": true
+    },
+    {
+      "id": "scuola-052",
+      "origine": "Tortorella2017",
+      "anno": 2017,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 16,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-126",
+        "modulo-127",
+        "modulo-128",
+        "modulo-129",
+        "modulo-130"
+      ]
+    },
+    {
+      "id": "scuola-053",
+      "origine": "Tortorella2018",
+      "anno": 2018,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 17,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-131",
+        "modulo-132",
+        "modulo-133",
+        "modulo-134"
+      ]
+    },
+    {
+      "id": "scuola-054",
+      "origine": "Tortorella2019",
+      "anno": 2019,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 18,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-135",
+        "modulo-136",
+        "modulo-137",
+        "modulo-138",
+        "modulo-139",
+        "modulo-140"
+      ]
+    },
+    {
+      "id": "scuola-055",
+      "origine": "WinterPills2020",
+      "anno": 2020,
+      "luogo": "Online",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": null,
+      "struttura": "Microsoft Teams",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-193",
+        "modulo-194",
+        "modulo-195",
+        "modulo-196",
+        "modulo-197"
+      ]
+    },
+    {
+      "id": "scuola-056",
+      "origine": "Tortorella2021",
+      "anno": 2021,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 19,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-141",
+        "modulo-142",
+        "modulo-143"
+      ]
+    },
+    {
+      "id": "scuola-057",
+      "origine": "Tortorella2022",
+      "anno": 2022,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 20,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-144",
+        "modulo-145",
+        "modulo-146",
+        "modulo-147",
+        "modulo-148",
+        "modulo-149"
+      ]
+    },
+    {
+      "id": "scuola-058",
+      "origine": "Tortorella2023",
+      "anno": 2023,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 21,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-150",
+        "modulo-151",
+        "modulo-152",
+        "modulo-153",
+        "modulo-154",
+        "modulo-155"
+      ]
+    },
+    {
+      "id": "scuola-059",
+      "origine": "Tortorella2024",
+      "anno": 2024,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 22,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-156",
+        "modulo-157",
+        "modulo-158",
+        "modulo-159",
+        "modulo-160",
+        "modulo-161"
+      ]
+    },
+    {
+      "id": "scuola-060",
+      "origine": "Tortorella2025",
+      "anno": 2025,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": 23,
+      "struttura": "Comune di Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": null,
+      "fine": null,
+      "moduli": [
+        "modulo-162",
+        "modulo-163",
+        "modulo-164",
+        "modulo-165",
+        "modulo-166",
+        "modulo-167"
+      ]
+    }
+  ],
+  "moduli": [
+    {
+      "id": "modulo-002",
+      "scuola": "scuola-035",
+      "anno": 2006,
+      "titolo": "L’accelerazione del tempo",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Carmen",
+          "cognome": "Leccardi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-003",
+      "scuola": "scuola-035",
+      "anno": 2006,
+      "titolo": "La trasformazione della memoria e dell’esperienza",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Jedlowski",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-004",
+      "scuola": "scuola-035",
+      "anno": 2006,
+      "titolo": "Clientelismo e mezzogiorno",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Piero",
+          "cognome": "Fantozzi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-005",
+      "scuola": "scuola-035",
+      "anno": 2006,
+      "titolo": "Ripensare il genere",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Donatella",
+          "cognome": "Barazzetti",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-006",
+      "scuola": "scuola-035",
+      "anno": 2006,
+      "titolo": null,
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Leonardo",
+          "cognome": "Cannavò",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-007",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "L'insularità socio-culturale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Merler",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-008",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "La storia e le autobiografie",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Bechelloni",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-009",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "Interrogando i giovani sui loro rapporti con la loro stanza",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Pierluca",
+          "cognome": "Birindelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-010",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "La cultura dei pescatori della costa Nord-ovest",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Gabriella",
+          "cognome": "Mondardini",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-011",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "Funzioni della scrittura",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giuseppe",
+          "cognome": "Angioni",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-012",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "Intervistare con le storie",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-013",
+      "scuola": "scuola-024",
+      "anno": 2000,
+      "titolo": "Famiglia, parentela e insediamenti",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Antonio",
+          "cognome": "Fadda",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-014",
+      "scuola": "scuola-002",
+      "anno": 1985,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-015",
+      "scuola": "scuola-003",
+      "anno": 1987,
+      "titolo": "Epistemologia e metodologia",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-016",
+      "scuola": "scuola-004",
+      "anno": 1989,
+      "titolo": "Epistemologia e metodologia",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Blaikie",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1989-05-22",
+      "fine": "1989-06-14",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-017",
+      "scuola": "scuola-004",
+      "anno": 1989,
+      "titolo": "Epistemologia e metodologia",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1989-05-22",
+      "fine": "1989-06-14",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-018",
+      "scuola": "scuola-005",
+      "anno": 1990,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1990-06-18",
+      "fine": "1990-06-23",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-019",
+      "scuola": "scuola-005",
+      "anno": 1990,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Franco",
+          "cognome": "Rositi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1990-06-18",
+      "fine": "1990-06-23",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-020",
+      "scuola": "scuola-005",
+      "anno": 1990,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1990-06-18",
+      "fine": "1990-06-23",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-021",
+      "scuola": "scuola-006",
+      "anno": 1990,
+      "titolo": "Tre mondi, due famiglie, molti livelli",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1990-10-22",
+      "fine": "1990-10-27",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-022",
+      "scuola": "scuola-007",
+      "anno": 1991,
+      "titolo": "Logica e ricerca",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alessandro",
+          "cognome": "Bruschi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1991-01-07",
+      "fine": "1991-01-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-023",
+      "scuola": "scuola-008",
+      "anno": 1991,
+      "titolo": "The Logic of Causal Modelling",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Dreier",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1991-05-06",
+      "fine": "1991-05-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-024",
+      "scuola": "scuola-008",
+      "anno": 1991,
+      "titolo": "The Logic of Causal Modelling",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Pavone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1991-05-06",
+      "fine": "1991-05-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-025",
+      "scuola": "scuola-009",
+      "anno": 1991,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1991-10-07",
+      "fine": "1991-10-16",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-026",
+      "scuola": "scuola-009",
+      "anno": 1991,
+      "titolo": "L'arte del questionario e dell'intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1991-10-07",
+      "fine": "1991-10-16",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-027",
+      "scuola": "scuola-010",
+      "anno": 1992,
+      "titolo": "I paradossi nelle scienze sociali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Luca",
+          "cognome": "Ricolfi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1992-05-04",
+      "fine": "1992-05-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-028",
+      "scuola": "scuola-011",
+      "anno": 1992,
+      "titolo": "L'analisi monovariata",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1992-11-02",
+      "fine": "1992-11-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-029",
+      "scuola": "scuola-012",
+      "anno": 1993,
+      "titolo": "Logical Structure of Scientific Theories",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Dreier",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1993-01-11",
+      "fine": "1993-01-15",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-030",
+      "scuola": "scuola-013",
+      "anno": 1993,
+      "titolo": "Storicità dei programmi di ricerca",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Lentini",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1993-10-25",
+      "fine": "1993-10-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-031",
+      "scuola": "scuola-014",
+      "anno": 1994,
+      "titolo": "Realtà pensiero linguaggio",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1994-01-10",
+      "fine": "1994-01-14",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-032",
+      "scuola": "scuola-015",
+      "anno": 1995,
+      "titolo": "Alcune questioni gnoseologiche e metodologiche",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1995-03-29",
+      "fine": "1995-04-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-033",
+      "scuola": "scuola-015",
+      "anno": 1995,
+      "titolo": "Alcune questioni gnoseologiche e metodologiche",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Roberto",
+          "cognome": "Fideli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1995-03-29",
+      "fine": "1995-04-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-034",
+      "scuola": "scuola-015",
+      "anno": 1995,
+      "titolo": "Alcune questioni gnoseologiche e metodologiche",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "",
+          "cognome": "Rodolfi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1995-03-29",
+      "fine": "1995-04-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-035",
+      "scuola": "scuola-016",
+      "anno": 1995,
+      "titolo": "Analisi monovariata e bivariata",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1995-10-09",
+      "fine": "1995-10-21",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-036",
+      "scuola": "scuola-017",
+      "anno": 1996,
+      "titolo": "Modelli spaziali di comportamento elettorale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Luca",
+          "cognome": "Ricolfi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1996-06-10",
+      "fine": "1996-06-14",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-037",
+      "scuola": "scuola-018",
+      "anno": 1997,
+      "titolo": "Concetti di scienza e di metodo",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1997-05-15",
+      "fine": "1997-05-17",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-038",
+      "scuola": "scuola-019",
+      "anno": 1997,
+      "titolo": "Costruzione di una matrice di dati",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1997-10-06",
+      "fine": "1997-10-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-039",
+      "scuola": "scuola-020",
+      "anno": 1998,
+      "titolo": "Analisi monovariata e bivariata",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1998-01-12",
+      "fine": "1998-01-16",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-040",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Il questionario nella tradizione comportamentista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "M. Concetta",
+          "cognome": "Pitrone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-04",
+      "fine": "2002-02-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-041",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Difetti strutturali a livello di vettore e a livello di matrice",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-05",
+      "fine": "2002-02-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-042",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Il ruolo delle domande aperte",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Roberto",
+          "cognome": "Fideli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-06",
+      "fine": "2002-02-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-043",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Sorprese semantiche",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Stefania",
+          "cognome": "Tusini",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-06",
+      "fine": "2002-02-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-044",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Perché rispondere? Dinamiche motivazionali e strategie d'interazione tra intervistatore e intervistato",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Gianni",
+          "cognome": "Losito",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-08",
+      "fine": "2002-02-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-045",
+      "scuola": "scuola-028",
+      "anno": 2002,
+      "titolo": "Difetti grafici",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2002-02-08",
+      "fine": "2002-02-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-046",
+      "scuola": "scuola-031",
+      "anno": 2004,
+      "titolo": "Sembra facile fare un questionario",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-08-23",
+      "fine": "2004-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-047",
+      "scuola": "scuola-031",
+      "anno": 2004,
+      "titolo": "Segreti dell’analisi dei dati con Excel",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giancarlo",
+          "cognome": "Gasperoni",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-08-27",
+      "fine": "2004-08-27",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-048",
+      "scuola": "scuola-031",
+      "anno": 2004,
+      "titolo": "Pianichiamo l’analisi dei dati",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-08-30",
+      "fine": "2004-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-049",
+      "scuola": "scuola-031",
+      "anno": 2004,
+      "titolo": "Vi racconto il modello di Rasch",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giuseppe",
+          "cognome": "Giampaglia",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-03",
+      "fine": "2004-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-050",
+      "scuola": "scuola-033",
+      "anno": 2005,
+      "titolo": "La fotografia sociologica",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Francesco",
+          "cognome": "Mattioli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2005-08-29",
+      "fine": "2005-08-29",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-051",
+      "scuola": "scuola-033",
+      "anno": 2005,
+      "titolo": "Scaliamo insieme questi atteggiamenti",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giancarlo",
+          "cognome": "Gasperoni",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Maria Concetta",
+          "cognome": "Pitrone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2005-08-30",
+      "fine": "2005-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-052",
+      "scuola": "scuola-033",
+      "anno": 2005,
+      "titolo": "Sintetizzare dati, esplorare lo spazio mentale o costruire indici empiricamente basati sulle funzioni storiche dell’analisi fattoriale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2005-09-05",
+      "fine": "2005-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-053",
+      "scuola": "scuola-033",
+      "anno": 2005,
+      "titolo": "Analisi dei fattori e analisi in componenti principali: i fondamenti matematici e le procedure",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2005-09-05",
+      "fine": "2005-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-054",
+      "scuola": "scuola-033",
+      "anno": 2005,
+      "titolo": "Applichiamo insieme l’analisi in componenti principali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2005-09-06",
+      "fine": "2005-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-055",
+      "scuola": "scuola-036",
+      "anno": 2006,
+      "titolo": "Regressione lineare e regressione logistica",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Piergiorgio",
+          "cognome": "Corbetta",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2006-09-04",
+      "fine": "2006-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-056",
+      "scuola": "scuola-036",
+      "anno": 2006,
+      "titolo": "Usare la rete per la ricerca sociale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2006-09-07",
+      "fine": "2006-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-057",
+      "scuola": "scuola-036",
+      "anno": 2006,
+      "titolo": "Casuale e rappresentativo: ma che vuole dire? Realtà e finzione nelle procedure di campionamento",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2006-09-11",
+      "fine": "2006-09-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-058",
+      "scuola": "scuola-036",
+      "anno": 2006,
+      "titolo": "Un ibrido vincente: il campionamento ecologico",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2006-09-13",
+      "fine": "2006-09-14",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-059",
+      "scuola": "scuola-038",
+      "anno": 2007,
+      "titolo": "Come trarre da un’intervista ermeneutica dati per una matrice",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2007-08-27",
+      "fine": "2007-08-28",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-060",
+      "scuola": "scuola-038",
+      "anno": 2007,
+      "titolo": "E ora che ho scelto gli indicatori, come lo costruisco questo benedetto indice?",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2007-08-29",
+      "fine": "2007-08-31",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-061",
+      "scuola": "scuola-038",
+      "anno": 2007,
+      "titolo": "Analisi delle corrispondenze multiple",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2007-09-03",
+      "fine": "2007-09-07",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-062",
+      "scuola": "scuola-040",
+      "anno": 2008,
+      "titolo": "Come redigere un questionario standardizzato, facilitando il rapporto con gli intervistati e rendendo più efficace l’analisi dei dati",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2008-09-01",
+      "fine": "2008-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-063",
+      "scuola": "scuola-040",
+      "anno": 2008,
+      "titolo": "Il ruolo degli intervistatori nella somministrazione dei questionari",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Rita",
+          "cognome": "Bichi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2008-09-03",
+      "fine": "2008-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-064",
+      "scuola": "scuola-040",
+      "anno": 2008,
+      "titolo": "Analisi dei reticoli",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Antonio",
+          "cognome": "Chiesi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2008-09-08",
+      "fine": "2008-09-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-065",
+      "scuola": "scuola-040",
+      "anno": 2008,
+      "titolo": "La porta di accesso all’analisi multivariata: tre variabili",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2008-09-08",
+      "fine": "2008-09-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-066",
+      "scuola": "scuola-042",
+      "anno": 2009,
+      "titolo": "Scelta di indicatori e costruzione di indici",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2009-08-31",
+      "fine": "2009-09-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-067",
+      "scuola": "scuola-042",
+      "anno": 2009,
+      "titolo": "Come si fa un libro. Teoria e tecnica del lavoro editoriale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Anna",
+          "cognome": "Desimio",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2009-08-31",
+      "fine": "2009-09-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-068",
+      "scuola": "scuola-042",
+      "anno": 2009,
+      "titolo": "L’analisi dei gruppi (cluster analysis)",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2009-09-07",
+      "fine": "2009-09-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-069",
+      "scuola": "scuola-042",
+      "anno": 2009,
+      "titolo": "L’analisi del contenuto",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Gianni",
+          "cognome": "Losito",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2009-09-07",
+      "fine": "2009-09-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-070",
+      "scuola": "scuola-043",
+      "anno": 2010,
+      "titolo": "Redigiamo insieme un questionario",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2010-08-30",
+      "fine": "2010-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-071",
+      "scuola": "scuola-043",
+      "anno": 2010,
+      "titolo": "Le rappresentazioni grache dei dati e dei risultati delle analisi",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Delli Zotti",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2010-09-06",
+      "fine": "2010-09-10",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-072",
+      "scuola": "scuola-043",
+      "anno": 2010,
+      "titolo": "Regressione lineare e logistica e analisi causale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Piergiorgio",
+          "cognome": "Corbetta",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2010-09-06",
+      "fine": "2010-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-073",
+      "scuola": "scuola-043",
+      "anno": 2010,
+      "titolo": "La visualizzazione di strutture complesse",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Daniele",
+          "cognome": "Nigris",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2010-09-09",
+      "fine": "2010-09-10",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-074",
+      "scuola": "scuola-044",
+      "anno": 2011,
+      "titolo": "Tabelle da studiare, tabelle da buttare. Come costruire una tabella che valga la pena di analizzare",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2011-08-29",
+      "fine": "2011-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-075",
+      "scuola": "scuola-044",
+      "anno": 2011,
+      "titolo": "Introduzione alla valutazione: metodo e applicazioni",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Claudio",
+          "cognome": "Bezzi",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Vergani",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2011-09-05",
+      "fine": "2011-09-09",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-076",
+      "scuola": "scuola-044",
+      "anno": 2011,
+      "titolo": "Teoria e pratica del campionamento nelle scienze umane",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2011-09-05",
+      "fine": "2011-09-09",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-077",
+      "scuola": "scuola-045",
+      "anno": 2012,
+      "titolo": "La cosa più difficile: scegliere indicatori e combinarli in indici",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2012-08-27",
+      "fine": "2012-08-31",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-078",
+      "scuola": "scuola-045",
+      "anno": 2012,
+      "titolo": "Analisi mono e bivariata dei dati: vari softwares a confronto",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Diana",
+          "affiliazione": "Fiorenzo"
+        },
+        {
+          "nome": "Parziale",
+          "cognome": "",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2012-08-27",
+      "fine": "2012-08-31",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-079",
+      "scuola": "scuola-045",
+      "anno": 2012,
+      "titolo": "Analisi multivariata dei dati con softwares statistici",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2012-09-03",
+      "fine": "2012-09-07",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-080",
+      "scuola": "scuola-046",
+      "anno": 2013,
+      "titolo": "Usiamo la rete anche per la ricerca sociale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2013-08-26",
+      "fine": "2013-08-28",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-081",
+      "scuola": "scuola-046",
+      "anno": 2013,
+      "titolo": "Un metodo di ricerca che fonde i vantaggi del “qualitativo” e del “quantitativo”: le storie",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2013-08-26",
+      "fine": "2013-08-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-082",
+      "scuola": "scuola-046",
+      "anno": 2013,
+      "titolo": "Correlazione e regressione con SPSS",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Diana",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2013-08-28",
+      "fine": "2013-08-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-083",
+      "scuola": "scuola-046",
+      "anno": 2013,
+      "titolo": "Affrontare la complessità nella valutazione delle politiche pubbliche: approcci “meso” e tecniche non standard",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Mita",
+          "cognome": "Marra",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Claudio",
+          "cognome": "Bezzi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2013-09-03",
+      "fine": "2013-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-084",
+      "scuola": "scuola-046",
+      "anno": 2013,
+      "titolo": "Analisi delle componenti principali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2013-09-03",
+      "fine": "2013-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-085",
+      "scuola": "scuola-047",
+      "anno": 2014,
+      "titolo": "Tutti redigono questionari: ma è davvero così facile?",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2014-08-25",
+      "fine": "2014-08-29",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-086",
+      "scuola": "scuola-047",
+      "anno": 2014,
+      "titolo": "L’analisi del contenuto",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Gianni",
+          "cognome": "Losito",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2014-09-01",
+      "fine": "2014-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-087",
+      "scuola": "scuola-047",
+      "anno": 2014,
+      "titolo": "Introduzione ai modelli di equazioni strutturali per le scienze sociali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2014-09-01",
+      "fine": "2014-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-088",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Come si analizza un le tri-nazionale di un ricerca bi-alternativa",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        }
+      ],
+      "inizio": "2015-08-24",
+      "fine": "2015-08-28",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-089",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Scaling. Come rilevare atteggiamenti e valori delle persone?",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Amalia",
+          "cognome": "Caputo",
+          "affiliazione": "Ricercatrice Unviersità degli Studi di Napoli Federico II"
+        },
+        {
+          "nome": "Fiorenzo",
+          "cognome": "Parziale",
+          "affiliazione": "Assegnista Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2015-08-24",
+      "fine": "2015-08-28",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-090",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "L’analisi multivariata delle variabili categoriali: i modelli di regressione logistica",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2015-08-31",
+      "fine": "2015-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-091",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "I modelli di equazioni strutturali in sociologia e in economia",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": "Associato Sapienza Università di Roma"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Rossi",
+          "affiliazione": "Ricercatore Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2015-09-02",
+      "fine": "2015-09-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-092",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Per non costruire il questionario alla cieca: la mappa dei concetti",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        }
+      ],
+      "inizio": "2015-08-31",
+      "fine": "2015-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-093",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Quello che volevate sapere sul questionario e nessuno vi ha detto finora",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Claudio",
+          "cognome": "Bezzi",
+          "affiliazione": "Valutatore di politiche"
+        }
+      ],
+      "inizio": "2015-09-02",
+      "fine": "2015-09-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-094",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Fare etnografia con Internet",
+      "opzione": "2D",
+      "docenti": [
+        {
+          "nome": "Maria",
+          "cognome": "Esposito",
+          "affiliazione": "Dottoranda Università di Salerno"
+        }
+      ],
+      "inizio": "2015-08-31",
+      "fine": "2015-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-095",
+      "scuola": "scuola-048",
+      "anno": 2015,
+      "titolo": "Fare ricerca sociale in Rete",
+      "opzione": "2D",
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": "Ordinario Università degli Studi di Torino"
+        }
+      ],
+      "inizio": "2015-09-02",
+      "fine": "2015-09-04",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-096",
+      "scuola": "scuola-050",
+      "anno": 2016,
+      "titolo": "Costruire indici mediante l’analisi fattoriale",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Professore emerito, Università di Firenze; visiting professor, Università di Buenos Aires"
+        }
+      ],
+      "inizio": "2016-08-22",
+      "fine": "2016-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-097",
+      "scuola": "scuola-050",
+      "anno": 2016,
+      "titolo": "Origine, costruzione e analisi di indicatori sociali",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Parra Saiani",
+          "affiliazione": "Ricercatore, Università degli Studi di Genova"
+        }
+      ],
+      "inizio": "2016-08-22",
+      "fine": "2016-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-098",
+      "scuola": "scuola-041",
+      "anno": 2008,
+      "titolo": null,
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Graziella",
+          "cognome": "Priulla",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-099",
+      "scuola": "scuola-041",
+      "anno": 2008,
+      "titolo": null,
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Santo",
+          "cognome": "Di Nuovo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-100",
+      "scuola": "scuola-041",
+      "anno": 2008,
+      "titolo": "I concetti sensibilizzanti",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Rosalba",
+          "cognome": "Perrotta",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-101",
+      "scuola": "scuola-041",
+      "anno": 2008,
+      "titolo": "Due secoli di questionario",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "M. Concetta",
+          "cognome": "Pitrone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-102",
+      "scuola": "scuola-041",
+      "anno": 2008,
+      "titolo": null,
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Rita",
+          "cognome": "Pavsic",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-103",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "Cultura eccedente, cultura superflua, cultura interiorizzata: alcuni 'caveat' per il lavoro di intervista",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Franco",
+          "cognome": "Rositi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-104",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "Gnoseologia del Mediterraneo",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Franco",
+          "cognome": "Cassano",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-105",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "Il potere del fazzoletto, il fazzoletto del potere",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Silvia",
+          "cognome": "Liaci",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-106",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "L'albero della vita: il pavimento musivo della cattedrale di Otranto",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Marcella",
+          "cognome": "Ruggiero",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-107",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "La nuova città: i suoi abitanti, la sua cultura",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giandomenico",
+          "cognome": "Amendola",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-108",
+      "scuola": "scuola-029",
+      "anno": 2002,
+      "titolo": "Esercitazioni di gruppo su temi proposti da Alberto Marradi e sotto la guida di vari coordinatori: mettersi d'accordo su cos'è una bugia / un esperimento /una prova",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-109",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Funzioni dell’analisi monovariata. Distribuzione dei dati in categorie non ordinate (il concetto di autonomia semantica; l’importanza delle distribuzioni equilibrate; forme di rappresentazione).",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-15",
+      "fine": "2001-01-15",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-110",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Distribuzione dei dati in categorie ordinate (il concetto di relazione monotonica; la ridotta autonomia semantica delle categorie ordinali; distribuzioni unimodali, bimodali, etc.; forme di rappresentazione).",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-16",
+      "fine": "2001-01-16",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-111",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Distribuzione dei dati nelle categorie di una variabile cardinale (cardinali e quasi cardinali; la scarsa autonomia semantica e le sue conseguenze; tendenza centrale e dispersione; standardizzazione e trasformazioni logaritmiche; forme di rappresentazione).",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-16",
+      "fine": "2001-01-16",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-112",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "La relazione tra due variabili dicotomiche (coefficienti unidirezionali e bidirezionali; false dicotomie). Relazioni tra una dicotomia e una categoriale non dicotomica.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-17",
+      "fine": "2001-01-17",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-113",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Relazioni fra due variabili con categorie non ordinate (tabelle di contingenza che valga la pena di analizzare; chi quadrato e i suoi limiti). Relazioni fra due variabili ordinali. Forme di rappresentazione.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-17",
+      "fine": "2001-01-17",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-114",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Analisi della varianza (eta quadrato e i suoi limiti). Relazioni tra una cardinale e una ordinale. Forme di rappresentazione.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-18",
+      "fine": "2001-01-18",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-115",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Procedure di costruzione dei dati in sede di analisi mono- e bi-variata.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Maria Stella",
+          "cognome": "Agnoli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-18",
+      "fine": "2001-01-18",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-116",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Relazioni tra due cardinali (il diagramma a dispersione; relazioni lineari e non; regressione, correlazione e relativi inganni; il coefficiente di determinazione e il controllo della linearità; cenni sull’analisi dei residui).",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-19",
+      "fine": "2001-01-19",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-117",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Le scale a scelta forzata; come l’analisi dei dati fa emergere le differenze rispetto alle Likert tradizionali.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Maria Concetta",
+          "cognome": "Pitrone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-19",
+      "fine": "2001-01-19",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-118",
+      "scuola": "scuola-026",
+      "anno": 2001,
+      "titolo": "Fondamenti di analisi trivariata. Cosa si guadagna e cosa si perde.",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Carmelo",
+          "cognome": "Lombardo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2001-01-20",
+      "fine": "2001-01-20",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-119",
+      "scuola": "scuola-022",
+      "anno": 1999,
+      "titolo": "Pre-asserti, asserti, spiegazioni",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "1999-04-26",
+      "fine": "1999-04-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-120",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Introduzione all'analisi fattoriale con SPSS",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Postdoctoral Research Fellow in Urban Studies, GSSI"
+        }
+      ],
+      "inizio": "2016-08-22",
+      "fine": "2016-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-121",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Introduzione all’analisi multilivello",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Gian Maria",
+          "cognome": "Bottoni",
+          "affiliazione": "Dottorando di ricerca in metodologia delle scienze sociali, Sapienza Università di Roma, visiting researcher University of Utrecht, Netherlands, department of Methodology and Statistics"
+        }
+      ],
+      "inizio": "2016-08-22",
+      "fine": "2016-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-122",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Introduzione all'analisi dei dati con SPSS",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Postdoctoral Research Fellow in Urban Studies, GSSI"
+        }
+      ],
+      "inizio": "2016-08-29",
+      "fine": "2016-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-123",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Strumenti per analizzare i dati di una ricerca",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Professore emerito, Università di Firenze; visiting professor, Università di Buenos Aires"
+        }
+      ],
+      "inizio": "2016-08-29",
+      "fine": "2016-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-124",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Analisi multivariata dei dati con SPSS",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "ricercatore, Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2016-08-29",
+      "fine": "2016-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-125",
+      "scuola": "scuola-051",
+      "anno": 2016,
+      "titolo": "Fare ricerca etnografica online: la netnografia",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Maria",
+          "cognome": "Esposito",
+          "affiliazione": "PhD in Scienze della Comunucazione, Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2016-08-29",
+      "fine": "2016-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-126",
+      "scuola": "scuola-052",
+      "anno": 2017,
+      "titolo": "Casuale e rappresentativo: ma che vuole dire? Realtà e finzione nelle procedure di campionamento",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        }
+      ],
+      "inizio": "2017-08-28",
+      "fine": "2017-08-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-127",
+      "scuola": "scuola-052",
+      "anno": 2017,
+      "titolo": "Cluster analysis. Tecniche di classificazione e segmentazione nella ricerca sociale e di mercato",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Ricercatore Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2017-08-28",
+      "fine": "2017-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-128",
+      "scuola": "scuola-052",
+      "anno": 2017,
+      "titolo": "Un ibrido vincente: il campionamento ecologico",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": "Ordinario Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2017-08-30",
+      "fine": "2017-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-129",
+      "scuola": "scuola-052",
+      "anno": 2017,
+      "titolo": "Come si redige un questionario evitando errori ricorrenti",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        }
+      ],
+      "inizio": "2017-09-04",
+      "fine": "2017-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-130",
+      "scuola": "scuola-052",
+      "anno": 2017,
+      "titolo": "La valutazione in situazioni complesse. Strumenti e soluzioni",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Claudio",
+          "cognome": "Bezzi",
+          "affiliazione": "Valutatore professionista"
+        },
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": "Ordinario Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2017-09-04",
+      "fine": "2017-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-131",
+      "scuola": "scuola-053",
+      "anno": 2018,
+      "titolo": "Gli indicatori nella ricerca sociale e nella ricerca valutativa",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Claudio",
+          "cognome": "Bezzi",
+          "affiliazione": "Valutatore Professionista"
+        }
+      ],
+      "inizio": "2018-08-27",
+      "fine": "2018-08-31",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-132",
+      "scuola": "scuola-053",
+      "anno": 2018,
+      "titolo": "Ricerca sociale e Big Data: possibilità e limiti",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Ricercatore Università degli Studi di Salerno"
+        },
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": "Ordinario Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2018-08-27",
+      "fine": "2018-08-31",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-133",
+      "scuola": "scuola-053",
+      "anno": 2018,
+      "titolo": "Metodi formali e risorse della rete: big data, robotica educativa e simulazioni con Netlogo",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": "ordinario università degli studi di Torino"
+        },
+        {
+          "nome": "Barbara",
+          "cognome": "Sonzogni",
+          "affiliazione": "Ricercatrice Sapienza Università di Roma"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-134",
+      "scuola": "scuola-053",
+      "anno": 2018,
+      "titolo": "Analisi dei dati e forme creative di rapresentazione dei risultati applicati ad una ricerca empirica condotta in Italia e Argentina",
+      "opzione": "2D",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-135",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "Analisi fattoriale e analisi delle componenti principali",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-136",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "Online research methods. Come fare ricerca sociale online",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato Università degli studi di Salerno"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-137",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "Social research methods on sports. Come fare ricerca empirica sullo sport",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Mehmet Erdem",
+          "cognome": "Delice",
+          "affiliazione": "Dottorando Unviersità degi studi di Salerno"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-138",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "Tutti redigono questionari. Ma è davvero così facile?",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-139",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "Progettare un'indagine: il disegno di ricerca dalla scrivania al campo",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Ricercatrice Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-140",
+      "scuola": "scuola-054",
+      "anno": 2019,
+      "titolo": "I modelli di regressione nella ricerca sociale",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Fabrizio",
+          "cognome": "Martire",
+          "affiliazione": "Ordinario Sapienza Università di Roma"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-141",
+      "scuola": "scuola-056",
+      "anno": 2021,
+      "titolo": "Scelta degli indicatori e costruzione degli indici",
+      "opzione": "A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2021-08-30",
+      "fine": "2021-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-142",
+      "scuola": "scuola-056",
+      "anno": 2021,
+      "titolo": "Fare web survey: ambiti, metodo ed esperienza",
+      "opzione": "B",
+      "docenti": [
+        {
+          "nome": "Gabriella",
+          "cognome": "Fazzi",
+          "affiliazione": "Ricercatrice ISTAT"
+        },
+        {
+          "nome": "Giulio",
+          "cognome": "Vidotto Fonda",
+          "affiliazione": "Direttore di ricerca SWG"
+        }
+      ],
+      "inizio": "2021-08-30",
+      "fine": "2021-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-143",
+      "scuola": "scuola-056",
+      "anno": 2021,
+      "titolo": "Analisi multivariata de dati co SPSS",
+      "opzione": "C",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato Università degli studi di Salerno"
+        },
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Ricercatrice Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2021-08-30",
+      "fine": "2021-09-03",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-144",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Tutti redigono questionari. Ma è davvero così facile?",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": "Assegnista di ricerca - Università degli Studi di Torino"
+        }
+      ],
+      "inizio": "2022-08-22",
+      "fine": "2022-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-145",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Digital Methods. Come fare ricerca sociale con il digitale.",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato Università di Salerno"
+        },
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Ricercatrice Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2022-08-22",
+      "fine": "2022-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-146",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Sentiment analysis per le scienze sociali",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Maria Pia",
+          "cognome": "Di Buono",
+          "affiliazione": "Ricercatrice Università di Napoli l'Orientale"
+        },
+        {
+          "nome": "Gennaro",
+          "cognome": "Nolano",
+          "affiliazione": "Dottorando Università di Napoli L'Orientale"
+        }
+      ],
+      "inizio": "2022-08-22",
+      "fine": "2022-08-26",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-147",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Fare analisi statistica in ambiente open source con Jamovi",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": "Ordinario, Università degli Studi di Torino"
+        },
+        {
+          "nome": "Tania",
+          "cognome": "Parisi",
+          "affiliazione": "Ricercatrice, Università degli studi di Torino"
+        }
+      ],
+      "inizio": "2022-08-29",
+      "fine": "2022-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-148",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Analisi dei dati 4.0. L'analisi dei dati al tempo dei big data e dei computer analytics",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": "Ordinario Sapienza Università Di Roma"
+        },
+        {
+          "nome": "Michele",
+          "cognome": "Santurro",
+          "affiliazione": "Dottorando Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2022-08-29",
+      "fine": "2022-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-149",
+      "scuola": "scuola-057",
+      "anno": 2022,
+      "titolo": "Analisi delle reti sociali",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Fabrizio",
+          "cognome": "Martire",
+          "affiliazione": "Ordinario Sapienza Università Di Roma"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Palmieri",
+          "affiliazione": "Ricercatore Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2022-08-29",
+      "fine": "2022-09-02",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-150",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Scelta degli indicatori e costruzione degli indici",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Università degli studi di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": "Ricercatore, Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2023-08-28",
+      "fine": "2023-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-151",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Le vie della ricerca. Come impostare una ricerca: quale approccio, quale raccolta delle informazioni, quali esperienze esemplari",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": "Ordinario, Sapienza Università di Roma"
+        },
+        {
+          "nome": "Fiorenzo",
+          "cognome": "Parziale",
+          "affiliazione": "Ricercatore, Sapienza Università di Roma"
+        }
+      ],
+      "inizio": "2023-08-28",
+      "fine": "2023-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-152",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Metodi creativi per la ricerca sociale",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Micol",
+          "cognome": "Pizzolati",
+          "affiliazione": "Associata, Università di Bergamo"
+        }
+      ],
+      "inizio": "2023-08-28",
+      "fine": "2023-09-01",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-153",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Fare analisi statistica in ambiente open-source con jamovi/R. Corso avanzato",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": "Ordinario, Unversità degli Studi di Torino"
+        },
+        {
+          "nome": "Tania",
+          "cognome": "Parisi",
+          "affiliazione": "Associata, Università degli studi di Torino"
+        }
+      ],
+      "inizio": "2023-09-04",
+      "fine": "2023-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-154",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Text Mining & Sentiment Analysis con Python",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Maria Pia",
+          "cognome": "di Buono",
+          "affiliazione": "Ricercatrice, Università di Napoli l'Orientale"
+        },
+        {
+          "nome": "Raffaele",
+          "cognome": "Manna",
+          "affiliazione": "Dottorando, Università di Napoli l'Orientale"
+        }
+      ],
+      "inizio": "2023-09-04",
+      "fine": "2023-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-155",
+      "scuola": "scuola-058",
+      "anno": 2023,
+      "titolo": "Mappare il sociale. Un'introduzione a QGIS e GEODA",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato, Università degli studi di Salerno"
+        },
+        {
+          "nome": "Ciro C.",
+          "cognome": "De Falco",
+          "affiliazione": "Ricercatore, Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2023-09-04",
+      "fine": "2023-09-08",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-156",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "Tutti redigono questionari. Ma è davvero così facile?",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": "Emerito Università di Firenze"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Di Gregorio",
+          "affiliazione": "Assegnista di ricerca - Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2024-08-26",
+      "fine": "2024-08-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-157",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "AI generativa e analisi dei testi nella ricerca sociale",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Maria Pia",
+          "cognome": "Di Buono",
+          "affiliazione": "Ricercatrice, Università di Napoli l'Orientale"
+        },
+        {
+          "nome": "Raffaele",
+          "cognome": "Manna",
+          "affiliazione": "Dottorando, Università di Napoli l'Orientale"
+        }
+      ],
+      "inizio": "2024-08-26",
+      "fine": "2024-08-30",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-158",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "Participatory research. Tecniche di ricerca e partecipazione",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Bertin",
+          "affiliazione": "Professore Ordinario Unviersità Ca' Foscari di Venezia"
+        },
+        {
+          "nome": "Nicoletta",
+          "cognome": "Pavesi",
+          "affiliazione": "Associata Università Cattolica di Milano"
+        },
+        {
+          "nome": "Michele",
+          "cognome": "Marzulli",
+          "affiliazione": "Associato Unviersità Ca' Foscari di Venezia"
+        }
+      ],
+      "inizio": "2024-08-26",
+      "fine": "2024-08-30",
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-159",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "Sociologia Visuale",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Francesco",
+          "cognome": "Sacchetti",
+          "affiliazione": "Associato Università degli studi di Urbino Carlo Bo"
+        },
+        {
+          "nome": "Luisa",
+          "cognome": "Stagi",
+          "affiliazione": "Associata Università degli studi di Genova"
+        }
+      ],
+      "inizio": "2024-09-02",
+      "fine": "2024-09-06",
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-160",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "Fare Netnografia nella ricerca sociale",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Ordinario Università di Salerno"
+        },
+        {
+          "nome": "Angela",
+          "cognome": "Delli Paoli",
+          "affiliazione": "Ricercatrice Università di Salerno"
+        },
+        {
+          "nome": "Valentina",
+          "cognome": "D'Auria",
+          "affiliazione": "Assegnista Università di Salerno"
+        }
+      ],
+      "inizio": "2024-09-02",
+      "fine": "2024-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-161",
+      "scuola": "scuola-059",
+      "anno": 2024,
+      "titolo": "AI Generativa e analisi dei dati nella ricerca sociale",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Ciro C.",
+          "cognome": "De Falco",
+          "affiliazione": "Ricercatore Università degli Studi di Napoli Federico II"
+        },
+        {
+          "nome": "Suania",
+          "cognome": "Acampa",
+          "affiliazione": "Assegnista Università degli studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2024-09-02",
+      "fine": "2024-09-06",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-162",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "Approccio biografico. Fondamenti e tecniche.",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Rita",
+          "cognome": "Bichi",
+          "affiliazione": "Ordinaria Università La Cattolica di Milano"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": "Ordinario Sapienza Università di Roma"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-163",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "Tecniche di ricerca sociale per il mercato e l'impresa: dal customer insight alla soddisfazione del cliente",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Pierpaolo",
+          "cognome": "Simonetti",
+          "affiliazione": "CRM Intesa Sanpaolo"
+        },
+        {
+          "nome": "Dario",
+          "cognome": "Pellegrino",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-164",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "Pratiche e metodi della Digital Public History",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Marcello",
+          "cognome": "Ravveduto",
+          "affiliazione": "Associato Università di Salerno"
+        },
+        {
+          "nome": "Enrica",
+          "cognome": "Salavatori",
+          "affiliazione": "Associata Università di Pisa"
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "annullato",
+      "date_da_verificare": true
+    },
+    {
+      "id": "modulo-165",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "Come condurre una web survey: dall’ impostazione del questionario all’analisi dei dati",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Ordinario Università di Salerno"
+        },
+        {
+          "nome": "Giuseppe Michele",
+          "cognome": "Padricelli",
+          "affiliazione": "Ricercatore Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2025-09-01",
+      "fine": "2025-09-05",
+      "programma": "Nel contesto della survey research il questionario si configura come uno degli strumenti più diffusi per indagare i fenomeni sociali. Nato come strumento di controllo per finalità censuarie, nel corso degli anni si è adattato ai presupposti dell’inchiesta campionaria per lo studio dell’opinione pubblica, per le ricerche di mercato, per lo studio dei processi culturali, economici e politici. L’avvento della rete e la sempre maggiore pervasività dello scenario digitale nella quotidianità sociale ha avuto un impatto senza precedenti sulla ricerca sociale e, conseguentemente, sugli adattamenti e sull’applicazione del questionario.\nSecondo Schmitz (2018) infatti Il digitale ha profondamente trasformato il contesto delle Survey, cambiando il modo in cui le persone si informano, usano i media ed entrano in relazione con i brand, modificando anche il modo in cui le persone si relazionano e reagiscono agli stimoli, comprese le richieste di collaborazione alle indagini di marketing.\nOggigiorno il ricorso alle indagini online risulta in alcuni casi particolarmente appetibile rispetto agli approcci tradizionali perché garantisce una maggiore velocità di realizzazione e costi ridotti. \nIl corso punta a offrire competenze metodologiche utili alla preparazione e allo svolgimento tutte le fasi di una ricerca standard, dalla strutturazione del disegno della ricerca alla preparazione degli strumenti di survey. \nIn particolare, il corso si sofferma sulla costruzione del questionario e sulle diverse opportunità di somministrazione dello strumento sia attraverso i canali tradizionali che nelle forme di diffusione e promozione online.\nDurante gli incontri, il ricorso a specifici casi studio permetterà di chiarire i vantaggi, le opportunità, i limiti e gli ostacoli che caratterizzano le strade digitali di indagine.  Verranno identificati gli errori commessi più di frequente dal ricercatore e verrà fatta luce sugli aspetti fondamentali a cui fare attenzione quando la popolazione da campionare è composta da utenti connessi.  \t\nIl corso consiste in momenti di lezione frontale ed esercitazioni pratiche da svolgere in gruppo. \nI docenti incoraggiano i partecipanti a condividere casi di loro interesse, inclusi esempi tratti dai propri progetti di ricerca in preparazione o in fase di definizione. \n\n\nLetture consigliate\n\n•\tBiffignandi, S., Bethlehem, J. (2021). Handbook of web surveys. Wiley.\n•\tFink, A. (2024). How to Conduct Surveys. A Step-by-Step Guide. Sage.\n•\tMarradi, A. (2019). Tutti redigono questionari. Ma è davvero così facile? Franco Angeli.",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-166",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "Analizzare la complessità in ambito sociale attraverso modeli di equazioni strutturali",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Rosanna",
+          "cognome": "Cataldo",
+          "affiliazione": "Ricercatrice Università degli Studi di Napoli Federico II"
+        },
+        {
+          "nome": "Ciro C.",
+          "cognome": "De Falco",
+          "affiliazione": "Ricercatore Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2025-09-01",
+      "fine": "2025-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-167",
+      "scuola": "scuola-060",
+      "anno": 2025,
+      "titolo": "L'uso dell'IA nell'analisi delle interviste in profondità",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Fabrizio",
+          "cognome": "Martire",
+          "affiliazione": "Ordinario Sapienza Università Di Roma"
+        },
+        {
+          "nome": "Daniele",
+          "cognome": "Scarscelli",
+          "affiliazione": "Ricercatore Università del Piemonte Orientale"
+        }
+      ],
+      "inizio": "2025-09-01",
+      "fine": "2025-09-05",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-168",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Capitale sociale e analisi di rete; un rompicapo metodologico",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Enrica",
+          "cognome": "Amaturo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-20",
+      "fine": "2004-09-20",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-169",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Sociologie del mondo globale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Vittorio",
+          "cognome": "Cotesta",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-21",
+      "fine": "2004-09-21",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-170",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Ricostruendo la logica interna delle narrazioni",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "M. Carmela",
+          "cognome": "Agodi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-21",
+      "fine": "2004-09-21",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-171",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "HyperPolitics: la costruzione dei concetti nell’era di internet",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Mauro",
+          "cognome": "Calise",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-22",
+      "fine": "2004-09-22",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-172",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "La tradizione sociologica a Salerno",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Salvatore",
+          "cognome": "Casillo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-22",
+      "fine": "2004-09-22",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-173",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "La carenza di riferimenti teorici nell’attuale ricerca sociologica",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Gerardo",
+          "cognome": "Ragone",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-23",
+      "fine": "2004-09-23",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-174",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Cosa ci facciamo con queste benedette interviste ermeneutiche una volta che le abbiamo registrate?",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Paolo",
+          "cognome": "Montesperelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-23",
+      "fine": "2004-09-23",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-175",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "la scuola di Chicago",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Raffele",
+          "cognome": "Rauty",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-24",
+      "fine": "2004-09-24",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-176",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Etnocentrismo, relativismo, Etnocentrismo critico",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Amalia",
+          "cognome": "Signorelli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-24",
+      "fine": "2004-09-24",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-177",
+      "scuola": "scuola-032",
+      "anno": 2004,
+      "titolo": "Facciamo il punto sull’immigrazione",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Enrico",
+          "cognome": "Pugliese",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2004-09-25",
+      "fine": "2004-09-25",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-178",
+      "scuola": "scuola-023",
+      "anno": 1999,
+      "titolo": "La trasformazione del welfare state e le teorie micro-macro",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Achille",
+          "cognome": "Ardigò",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-179",
+      "scuola": "scuola-023",
+      "anno": 1999,
+      "titolo": "La trasformazione della famiglia in Occidente e le teorie relative",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Marzio",
+          "cognome": "Barbagli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-180",
+      "scuola": "scuola-023",
+      "anno": 1999,
+      "titolo": "Scelta degli indicatori e costruzione degli indici mediante analisi delle componenti principali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-181",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "L’analisi relazionale in sociologia",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Pier Paolo",
+          "cognome": "Donati",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-182",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "I giovani come risorsa e come minaccia",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Antonio",
+          "cognome": "De Lillo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-183",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "I loglineari",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Antonio",
+          "cognome": "De Lillo",
+          "affiliazione": ""
+        },
+        {
+          "nome": "Giovanni",
+          "cognome": "Di Franco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-184",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "Il campionamento",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Marradi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-185",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "Analyse des données hétérogènes",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Andrei",
+          "cognome": "Mogoutov",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-186",
+      "scuola": "scuola-027",
+      "anno": 2001,
+      "titolo": "La Tuscia Etrusca",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Francesco",
+          "cognome": "Mattioli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "registrato",
+      "extraprogramma": true
+    },
+    {
+      "id": "modulo-187",
+      "scuola": "scuola-030",
+      "anno": 2003,
+      "titolo": "La sociologia visuale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Francesco",
+          "cognome": "Mattioli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2003-09-08",
+      "fine": "2003-09-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-188",
+      "scuola": "scuola-030",
+      "anno": 2003,
+      "titolo": "Il multiculturalismo / 1",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Vincenzo",
+          "cognome": "Cesareo",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2003-09-09",
+      "fine": "2003-09-10",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-189",
+      "scuola": "scuola-030",
+      "anno": 2003,
+      "titolo": "La previsione",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alberto",
+          "cognome": "Gasparini",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2003-09-09",
+      "fine": "2003-09-10",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-190",
+      "scuola": "scuola-030",
+      "anno": 2003,
+      "titolo": "Il capitale sociale nella teoria e nella ricerca empirica",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "M. Luisa",
+          "cognome": "Bianco",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2003-09-09",
+      "fine": "2003-09-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-191",
+      "scuola": "scuola-030",
+      "anno": 2003,
+      "titolo": "I modelli logici e il loro impiego nella ricerca sociale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Alessandro",
+          "cognome": "Bruschi",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": "2003-09-12",
+      "fine": "2003-09-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-192",
+      "scuola": "scuola-034",
+      "anno": 2005,
+      "titolo": "Pregi e limiti della sociologia visuale",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Francesco",
+          "cognome": "Mattioli",
+          "affiliazione": ""
+        }
+      ],
+      "inizio": null,
+      "fine": null,
+      "programma": null,
+      "stato": "da-verificare"
+    },
+    {
+      "id": "modulo-193",
+      "scuola": "scuola-055",
+      "anno": 2020,
+      "titolo": "Come impostare una ricerca standard",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato, Università degli studi di Salerno"
+        },
+        {
+          "nome": "Gabriella",
+          "cognome": "Punziano",
+          "affiliazione": "Ricercatrice, Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2020-12-11",
+      "fine": "2020-12-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-194",
+      "scuola": "scuola-055",
+      "anno": 2020,
+      "titolo": "Il campionamento nelle scienze sociali",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Renato",
+          "cognome": "Grimaldi",
+          "affiliazione": "Ordinario, Unversità degli Studi di Torino"
+        }
+      ],
+      "inizio": "2020-12-11",
+      "fine": "2020-12-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-195",
+      "scuola": "scuola-055",
+      "anno": 2020,
+      "titolo": "Come costruire un questionario",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Sandro",
+          "cognome": "Landucci",
+          "affiliazione": "Ricercatore Università degli studi di Firenze"
+        }
+      ],
+      "inizio": "2020-12-11",
+      "fine": "2020-12-11",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-196",
+      "scuola": "scuola-055",
+      "anno": 2020,
+      "titolo": "Principi di analisi monovariata e analisi bivariata",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Amalia",
+          "cognome": "Caputo",
+          "affiliazione": "Ricercatrice Unviersità degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2020-12-12",
+      "fine": "2020-12-12",
+      "programma": null,
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-197",
+      "scuola": "scuola-055",
+      "anno": 2020,
+      "titolo": "Introduzione all'analisi multivariata",
+      "opzione": null,
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Associato Università degli studi di Salerno"
+        }
+      ],
+      "inizio": "2020-12-12",
+      "fine": "2020-12-12",
+      "programma": null,
+      "stato": "registrato"
+    }
+  ]
+}

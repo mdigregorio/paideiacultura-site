@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { renderCatalogoFormazione } from './catalogo-formazione.mjs';
 
 const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const contentDir = path.join(site, 'contenuti');
@@ -201,6 +202,7 @@ function renderSite() {
       ${sectionHeading('03', formation.meta.eyebrow, formation.meta.titolo, 'formazione')}
       ${renderIntroduction(formation)}
       ${renderNote(formation)}
+      ${isActive(archive) ? '<a class="button button-secondary" href="#catalogo-formazione">Esplora le edizioni e i corsi <span aria-hidden="true">↓</span></a>' : ''}
       <div class="initiatives">${initiatives.map(item => `<article class="initiative"><p class="eyebrow">${escapeHtml(item.meta.categoria)}</p><h3>${escapeHtml(item.meta.titolo)}</h3><div class="prose">${markdownToHtml(item.body)}</div></article>`).join('')}</div>
     </section>` : '',
     isActive(conference) ? `<section class="section" id="convegni" aria-labelledby="titolo-convegni" data-source-id="52">
@@ -213,7 +215,10 @@ function renderSite() {
       ${sectionHeading('05', archive.meta.eyebrow, archive.meta.titolo, 'archivio')}
       ${renderIntroduction(archive)}
       ${renderNote(archive)}
+      ${renderCatalogoFormazione(path.join(contentDir, 'catalogo-formazione.json'), archiveEntries.map(item => item.meta.id))}
+      <details class="plain-details historic-documents"><summary>Documenti storici e programmi integrali <span class="disclosure" aria-hidden="true"></span></summary>
       ${archiveEntries.map((item, index) => `${index === 0 || archiveEntries[index - 1].meta.gruppo !== item.meta.gruppo ? `<h3>${escapeHtml(item.meta.gruppo)}</h3>` : ''}<details class="archive-entry" id="${escapeHtml(item.meta.id)}" data-source-id="${escapeHtml(item.meta.source_id)}"><summary><span class="entry-date">${escapeHtml(item.meta.data)}</span><span>${escapeHtml(item.meta.titolo)}</span><span class="disclosure" aria-hidden="true"></span></summary><div class="archive-body prose"><p class="archive-note">Documento d’archivio. Date, quote e riferimenti si riferiscono all’edizione indicata.</p>${markdownToHtml(item.body)}<a class="back-link" href="#archivio">Torna all’indice dell’archivio ↑</a></div></details>`).join('\n')}
+      </details>
     </section>` : '',
     isActive(contact) ? `<section class="section contact-section" id="contatti" aria-labelledby="titolo-contatti" data-source-id="16">
       ${sectionHeading('06', contact.meta.eyebrow, contact.meta.titolo, 'contatti')}

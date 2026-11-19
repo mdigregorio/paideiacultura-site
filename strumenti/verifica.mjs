@@ -80,6 +80,24 @@ if (readMeta(sectionFiles.archivio).attiva !== false) {
 }
 
 const publicFiles = fs.readdirSync(site, { recursive: true }).map(String);
+const catalog = JSON.parse(fs.readFileSync(path.join(contentRoot, 'catalogo-formazione.json'), 'utf8'));
+const schoolIds = new Set(catalog.scuole.map(item => item.id));
+const moduleIds = new Set(catalog.moduli.map(item => item.id));
+assert.equal(schoolIds.size, catalog.scuole.length, 'Identificativi pubblici delle scuole duplicati');
+assert.equal(moduleIds.size, catalog.moduli.length, 'Identificativi pubblici dei moduli duplicati');
+const linkedModules = catalog.scuole.flatMap(school => school.moduli.map(id => ({ id, school: school.id })));
+assert.equal(linkedModules.length, catalog.moduli.length, 'Numero di collegamenti scuola-modulo incoerente');
+assert.equal(new Set(linkedModules.map(item => item.id)).size, catalog.moduli.length, 'Modulo associato a più scuole');
+for (const item of catalog.moduli) {
+  assert.ok(schoolIds.has(item.scuola), `Scuola mancante: ${item.id}`);
+  assert.ok(linkedModules.some(link => link.id === item.id && link.school === item.scuola), `Associazione incoerente: ${item.id}`);
+}
+for (const item of [...catalog.scuole, ...catalog.moduli]) {
+  assert.ok(['registrato', 'annullato', 'da-verificare'].includes(item.stato), `Stato non valido: ${item.id}`);
+  assert.ok(!item.inizio || !item.fine || item.fine >= item.inizio, `Intervallo invertito: ${item.id}`);
+  assert.ok(!item.inizio || Number(item.inizio.slice(0, 4)) === item.anno, `Anno della data incoerente: ${item.id}`);
+  if (readMeta(sectionFiles.archivio).attiva !== false) assert.ok(ids.includes(item.id), `Voce del catalogo mancante: ${item.id}`);
+}
 assert.ok(!publicFiles.some(file => /\.(sql|php|env)$/i.test(file)), 'File non pubblico nella consegna');
 
 console.log(JSON.stringify({
@@ -88,5 +106,7 @@ console.log(JSON.stringify({
   archiveFiles: archiveSources.length,
   anchors,
   localReferences,
+  catalogSchools: catalog.scuole.length,
+  catalogModules: catalog.moduli.length,
   checks: ['contenuti Markdown', 'ancore e ID', 'risorse locali', 'assenza cookie e chiamate esterne', 'HTML semantico di base', 'esclusione SQL e PHP']
 }, null, 2));

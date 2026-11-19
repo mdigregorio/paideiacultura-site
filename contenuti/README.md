@@ -13,6 +13,7 @@ viene rigenerato e pubblicato automaticamente.
 - `04-formazione.md` e `formazione/`: presentazione e singole iniziative.
 - `05-convegni.md` e `convegni/`: presentazione e singoli convegni.
 - `06-archivio.md` e `archivio/`: introduzione e documenti storici.
+- `catalogo-formazione.json`: catalogo di scuole e moduli ricavato dall'Excel.
 - `07-contatti.md`: testo e collegamento di contatto.
 
 La parte compresa tra le due righe `---` all'inizio di ogni file contiene i dati
@@ -130,6 +131,21 @@ al ricordo pubblicato dall'ateneo, che viene aperto dal simbolo †.
 La pagina mostra inizialmente l'elenco in ordine alfabetico per cognome.
 Il selettore consente di passare all'ordine numerico per tessera. Senza
 JavaScript, l'elenco rimane leggibile in ordine alfabetico.
+
+## Aggiornare il catalogo della formazione
+
+Il catalogo si apre per edizione e consente anche la consultazione per corso,
+con ricerca per argomento, docente o luogo e filtri per anno e iniziativa.
+I programmi storici già presenti rimangono consultabili nei documenti integrali.
+
+Per aggiornare i dati dall'Excel usare `strumenti/importa-formazione.py`,
+poi rigenerare la pagina. La procedura completa è in
+`strumenti/IMPORTAZIONE-FORMAZIONE.md`. Il rapporto delle verifiche va conservato
+fuori dal sito. L'Excel originale non va caricato nel repository pubblico.
+
+Il file pubblico `catalogo-formazione.json` contiene solo i dati del catalogo.
+Le righe ripetute rimangono distinte. I collegamenti diretti alle singole
+edizioni e ai corsi si possono condividere copiando l'indirizzo dopo averli aperti.
 
 ## Pubblicazione
 
