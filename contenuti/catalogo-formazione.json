@@ -593,7 +593,7 @@
       "edizione": 8,
       "struttura": null,
       "argomento": null,
-      "stato": "da-verificare",
+      "stato": "da-controllare",
       "inizio": null,
       "fine": null,
       "moduli": [
@@ -665,7 +665,7 @@
       "edizione": 9,
       "struttura": "Seminario Santa Maria della Quercia e parco Villa Lante",
       "argomento": null,
-      "stato": "da-verificare",
+      "stato": "da-controllare",
       "inizio": null,
       "fine": null,
       "moduli": []
@@ -698,7 +698,7 @@
       "edizione": 10,
       "struttura": "Residence La Tonnara e spiaggia di Oliveri",
       "argomento": null,
-      "stato": "da-verificare",
+      "stato": "da-controllare",
       "inizio": null,
       "fine": null,
       "moduli": [
@@ -1100,7 +1100,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-003",
@@ -1118,7 +1118,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-004",
@@ -1136,7 +1136,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-005",
@@ -1154,7 +1154,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-006",
@@ -1172,7 +1172,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-007",
@@ -2873,7 +2873,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-099",
@@ -2891,7 +2891,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-100",
@@ -2909,7 +2909,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-101",
@@ -2927,7 +2927,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-102",
@@ -2945,7 +2945,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-103",
@@ -4116,7 +4116,7 @@
       "inizio": "2024-08-26",
       "fine": "2024-08-30",
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-159",
@@ -4139,7 +4139,7 @@
       "inizio": "2024-09-02",
       "fine": "2024-09-06",
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-160",
@@ -4792,7 +4792,7 @@
       "inizio": null,
       "fine": null,
       "programma": null,
-      "stato": "da-verificare"
+      "stato": "da-controllare"
     },
     {
       "id": "modulo-193",
