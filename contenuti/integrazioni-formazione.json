@@ -1,0 +1,243 @@
+{
+  "versione": 1,
+  "scuole": [
+    {
+      "id": "scuola-2026-tortorella",
+      "origine": "Tortorella2026",
+      "anno": 2026,
+      "luogo": "Tortorella",
+      "categoria": "Scuola estiva sul metodo e la ricerca sociale",
+      "edizione": null,
+      "struttura": "Borgo Tortorella",
+      "argomento": null,
+      "stato": "registrato",
+      "inizio": "2026-08-24",
+      "fine": "2026-09-04",
+      "moduli": [
+        "modulo-2026-1A",
+        "modulo-2026-1B",
+        "modulo-2026-1C",
+        "modulo-2026-2A",
+        "modulo-2026-2B",
+        "modulo-2026-2C"
+      ]
+    }
+  ],
+  "moduli": [
+    {
+      "id": "modulo-2026-1A",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "Analisi del contenuto e Natural Language Processing per la rappresentazione della conoscenza in ambienti digitali",
+      "opzione": "1A",
+      "docenti": [
+        {
+          "nome": "Mario",
+          "cognome": "Monteleone",
+          "affiliazione": "Ricercatore - Università degli Studi di Salerno"
+        },
+        {
+          "nome": "Giuseppe Michele",
+          "cognome": "Padricelli",
+          "affiliazione": "Ricercatore - Università degli Studi di Napoli Federico II"
+        }
+      ],
+      "inizio": "2026-08-24",
+      "fine": "2026-08-28",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "Le operazioni di classificazione e i sistemi di categorie che per anni hanno caratterizzato lo studio dei documenti ufficiali, dell’informazione e della comunicazione pubblica e politica sono sempre più spesso rioperativizzati. Ciò nella riscoperta del prodotto culturale come unità di analisi fondamentale per lo studio, la descrizione e la comprensione delle narrazioni e dei discorsi prodotti anche nelle perimetrazioni degli ambienti digitali.\nL’insieme di procedure utili alla scomposizione delle forme di comunicazione, meglio nota come analisi del contenuto, vive infatti un vero e proprio revival.\nIl sistema di classificazione applicato allo studio delle narrazioni giornalistiche nella seconda metà del Novecento, ad esempio, viene oggi applicato anche per lo studio degli User-Generated Contents (UGCs) adattandosi alle affordance della rete e in particolar modo dei social media (pensiamo ad esempio ai parametri di approvazione e di reattività dei contenuti come like, condivisioni, visualizzazioni etc.). Nell’approfondimento di questi presupposti, la prima parte del corso punta a offrire competenze metodologiche utili alla preparazione e allo svolgimento tutte le fasi di una ricerca orientata allo studio delle forme di comunicazione, dalla strutturazione del disegno della ricerca alla preparazione degli strumenti di analisi. \nQuesta fase del corso consiste nella segmentazione del framework teorico e nella definizione del ruolo del ricercatore che esegue il suo lavoro indagando dentro e fuori dagli ambienti digitali. Questa parte punta a chiarire gli ostacoli e le opportunità percorribili dal ricercatore nel maneggiare dati e tracce digitali, a identificare i limiti delle applicazioni single-method e a immaginare percorsi di metodo integrati sul piano quali-quantitativo.\nLa seconda parte del corso sposta l’attenzione sul Natural Language Processing (NLP) e sulle differenze metodologiche di progettazione e applicazione esistenti fra l’approccio probabilistico e quello ontologico.\nIn particolare, verranno evidenziate le differenze strutturali insite nella costruzione dei Large Language Models (LLMs) e dei Linguistic Linked Open Data (LLOD).\nQuesta parte del corso si sofferma sull’uso applicativo di LLMs e LLOD all’interno delle pratiche più attuali di NLP e rappresentazione automatica della conoscenza. Evidenziando i limiti e i bias presenti nei chatbot IA più diffusi, la parte laboratoriale del corso aiuterà a fare luce sul rapporto fra NLP e Intelligenza Artificiale (IA).\nQuesta parte del corso punta a fornire conoscenze sull’utilità che in ambito IA possono avere i metodi NLP definiti rule-based che costruiscono sistemi automatici applicativi di analisi dei dati linguistici. A tale proposito, rinnovando le definizioni di dati e metadati, si daranno specifiche descrizioni teoriche e di uso pratico dell’ambiente software NLP NooJ.\n\n\nLetture consigliate\n\nAmaturo, E., Punziano, G. (2013). Content Analysis tra comunicazione e politica. Ledizioni.\nChiarcos, C., Nordhoff, S. and Hellmann. S. (2012). Linked Data in Linguistics. Representing and Connecting Language Data and Language Metadata. Springer, Heidelberg.\nJatoi, A. R. (2024). Building a Large Language Model from Scratch, disponibile su https://medium.com/@raufpokemon00/building-a-large-language-model-llm-from-scratch-61fed0570ea5.\nSilberztein, M. (2015). The NooJ Manual. Disponibile su https://nooj.univ-fcomte.fr/files/NooJManual.pdf .\nTipaldo, G. (2025). L’analisi del contenuto e i media digitali. Dalla critica delle fonti a ChatGPT. Il Mulino.",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-2026-1B",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "Analisi multivariata dei dati con software statistici",
+      "opzione": "1B",
+      "docenti": [
+        {
+          "nome": "Felice",
+          "cognome": "Addeo",
+          "affiliazione": "Ordinario - Università degli Studi di Salerno"
+        }
+      ],
+      "inizio": "2026-08-24",
+      "fine": "2026-08-28",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "Il corso ha l’obiettivo di illustrare agli studenti le principali tecniche di analisi multivariata dei dati nelle Scienze Sociali, con riferimento specifico a tre famiglie di tecniche: analisi in componenti principali e analisi fattoriale; analisi delle corrispondenze multiple; analisi dei gruppi (Cluster Analysis).\nLo scopo delle tecniche di analisi multivariata è rappresentare simultaneamente le variabili e/o i casi presenti in una matrice, in modo da raggiungere una efficace sintesi dei dati (Di Franco 2001, 181); dunque, per applicare correttamente l’analisi multivariata, è necessario fare affidamento su molte variabili (da 3 in su) e disporre di un numero congruo di casi, altrimenti i risultati rischiano di essere statisticamente poco robusti.\nL’analisi in componenti principali e l’analisi fattoriale hanno l’obiettivo di sintetizzare la varianza – e quindi l’informazione – di un insieme di variabili correlate in un numero più ristretto di vettori, detti componenti o fattori, a seconda della tecnica applicata. Queste tecniche sono, probabilmente, le più usate nella ricerca sociale. Anche nella vita quotidiana ci capita di dover sintetizzare delle informazioni e, spesso, senza saperlo operiamo con una logica analoga a quella dell’analisi fattoriale.\nL’analisi delle corrispondenze multiple può essere considerata la trasposizione dell’analisi in componenti principali alle variabili categoriali; è, dunque, una tecnica particolarmente indicata per trattare variabili le cui categorie hanno una elevata autonomia semantica, che costituiscono la\nmaggioranza delle variabili rilevate nelle ricerche svolte in ambito sociologico e di marketing.\nInfine, l’analisi dei gruppi il cui obiettivo è creare delle classificazioni (tipologie) dei casi presenti in matrice, a partire da un set di variabili scelte come criteri classificatori; l’analisi dei gruppi trova ampia applicazione in quella branca del marketing che si occupa della segmentazione di mercati di consumatori.\nNel corso si darà ampio risalto agli aspetti semantici ed applicativi delle tecniche di analisi multivariata rispetto alle loro formalizzazioni matematiche e statistiche, con numerosi esempi tratti da ricerche empiriche effettivamente svolte in vari ambiti: sociologia, marketing, valutazione delle politiche pubbliche, educazione.\nIl corso alternerà lezioni frontali ad esercitazioni pratiche svolte con l’ausilio di SPSS, uno dei più diffusi software statistici per l’analisi dei dati nelle scienze sociali”.\n\nIndice sintetico degli argomenti:\n1. Principi di analisi monovariata e bivariata\n2. Introduzione all’analisi multivariata\n3. Analisi in componenti principali e analisi fattoriale\n4. Analisi delle corrispondenze multiple\n5. Analisi dei gruppi (Cluster Analysis)\n\n\nLetture consigliate\n\nDi Franco G. (2001) EDS: esplorare, descrivere e sintetizzare i dati. Guida pratica all'analisi dei dati nella ricerca sociale. Milano: Franco Angeli.\nDi Franco G. (2011) Tecniche e modelli di analisi multivariata. Milano: FrancoAngeli.\nDi Franco G. e Marradi A. (2013) Factor Analysis and Principal Component Analysis. Milano: FrancoAngeli. Field, A. (2024) Discovering Statistics Using IBM SPSS Statistics, 6th ed., London: SAGE Publications.",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-2026-1C",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "Metodi di ricerca partecipativa: una introduzione ai Focus Group e al metodo Delphi",
+      "opzione": "1C",
+      "docenti": [
+        {
+          "nome": "Vincenzo",
+          "cognome": "Esposito",
+          "affiliazione": "Ricercatore - Università degli Studi di Salerno"
+        },
+        {
+          "nome": "Patrizia",
+          "cognome": "Medici",
+          "affiliazione": "Fondatrice e Direttrice - Aletheia Ricerche di mercato"
+        }
+      ],
+      "inizio": "2026-08-24",
+      "fine": "2026-08-28",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "Il corso offre un’introduzione alle tecniche dei Focus Group e della Delphi, mettendone in evidenza le principali caratteristiche e le differenze. In particolare, il corso approfondisce:\n\ncome individuare e selezionare i partecipanti;\ncome progettare e organizzare le diverse fasi della raccolta dei dati;\ncome integrare in modo efficace le due metodologie all’interno di un percorso di ricerca;\ncome analizzare e interpretare i dati raccolti.\nAttraverso un inquadramento teorico e pratico, vengono illustrate le caratteristiche distintive di ciascuna metodologia, evidenziandone ambiti di applicazione, punti di forza e differenze.\nIl percorso formativo guida i partecipanti nella comprensione delle fasi fondamentali della progettazione della ricerca, dalla definizione degli obiettivi all’individuazione e selezione dei partecipanti, fino all’organizzazione delle diverse fasi di raccolta dei dati. Particolare attenzione è dedicata alle modalità di integrazione dei focus group e della tecnica Delphi all’interno di uno stesso disegno di ricerca, mostrando come questi strumenti possano essere utilizzati in modo complementare.\nInfine, il corso affronta le principali strategie di analisi e interpretazione dei dati raccolti, fornendo indicazioni operative per trasformare le informazioni emerse dal confronto tra i partecipanti in risultati utili e significativi per la ricerca.\n\n \n\nLetture consigliate\n\nPanoramica Generale\nBezzi, C. (2013). Fare ricerca con i gruppi. Guida all'utilizzo di focus group, brainstorming, Delphi e altre tecniche (Vol. 12). FrancoAngeli.\nBrüggen, E., & Willems, P. (2009). A critical comparison of offline focus groups, online focus groups and e-Delphi. International Journal of Market Research, 51(3), 1-15.\nBrown, J. (2018). Interviews, focus groups, and Delphi techniques. In Advanced research methods for applied psychology (pp. 95-106). Routledge.\nFocus Group\nJohnson, A. (1996). ‘It's good to talk’: the focus group and the sociological imagination. The sociological review, 44(3), 517-538.\nWilkinson, S. (1998). Focus group methodology: a review. International journal of social research methodology, 1(3), 181-203.\nParker, A., & Tritter, J. (2006). Focus group method and methodology: current practice and recent debate. International journal of research & method in education, 29(1), 23-37.\nDelphi\nLandeta, J. (2006). Current validity of the Delphi method in social sciences. Technological forecasting and social change, 73(5), 467-482.\nShariff, N. (2015). Utilizing the Delphi survey approach: A review. J Nurs Care, 4(3), 246.\nBrady, S. R. (2015). Utilizing and adapting the Delphi method for use in qualitative research. International journal of qualitative methods, 14(5), 1609406915621381.",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-2026-2A",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "Comics-Based Research: il fumetto come strumento per la ricerca sociale",
+      "opzione": "2A",
+      "docenti": [
+        {
+          "nome": "Veronica",
+          "cognome": "Moretti",
+          "affiliazione": "Associata - Università Alma Mater di Bologna"
+        }
+      ],
+      "inizio": "2026-08-31",
+      "fine": "2026-09-04",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "Il modulo   introduce un approccio innovativo alla ricerca nelle scienze sociali, che utilizza il fumetto come linguaggio di indagine. Il percorso propone di esplorare il potenziale delle immagini sequenziali non solo come strumento comunicativo, ma come dispositivo capace di sostenere la costruzione, l’analisi e la restituzione dei dati sociali.\nNella prima parte, il corso offre un inquadramento teorico che colloca la comics-based research all’interno della visual sociology, approfondendo il ruolo del fumetto nella produzione di conoscenza sociale. Questa prospettiva viene accompagnata da una riflessione critica sui processi di costruzione del dato, sul posizionamento de* ricercator* e sulle principali questioni etiche che attraversano la ricerca visuale, come la rappresentazione, la vulnerabilità e il consenso. L’analisi di casi studio provenienti da ambiti diversi – dalla salute alla migrazione, dal genere all’ambiente – permette di osservare come il fumetto sia già impiegato, in forme differenti, nella ricerca sociale contemporanea.\nIl cuore del modulo è costituito da un laboratorio pratico e progressivo, pensato come uno spazio di sperimentazione collettiva. Il fumetto viene utilizzato come strumento di lavoro per raccogliere storie ed esperienze, trasformare i racconti in domande di ricerca e progettare modalità alternative di costruzione dei dati. Durante il laboratorio vengono presentate e discusse diverse pratiche, come le interviste supportate da immagini, i diari a fumetti o le vignette da completare, mostrando come queste modalità possano essere integrate in un disegno di ricerca. Una particolare attenzione è dedicata anche all’analisi dei materiali visuali, attraverso l’uso di una comics-matrix, una griglia condivisa che consente di leggere e interpretare in modo sistematico i materiali prodotti.\nIl laboratorio non richiede competenze di disegno: il fumetto è inteso come una pratica accessibile, esplorativa e collettiva. L’obiettivo non è produrre “bei disegni”, ma usare il linguaggio del fumetto come strumento per pensare e fare ricerca in modo più riflessivo, partecipato e sensibile alle dimensioni visive e narrative dell’esperienza sociale.\n\nLetture consigliate\n\nPanoramica Generale\nDella Puppa, F., & Moretti, V. (2024). Ethnography and comics-based research: An introduction. Etnografia e Ricerca Qualitativa, XVII, 1–12.\nKuttner, P. J., Weaver-Hightower, M. B., & Sousanis, N. (2021). Comics- based research: The affordances of comics for research across disciplines. Qualitative Research, 21(2), 195–214\nMcNicol, S. (2019). Using participant-created comics as a research method. Qualitative Research Journal, 19(3), 236–247.",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-2026-2B",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "Fare una ricerca qualitativa: progettazione, lavoro sul campo, analisi",
+      "opzione": "2B",
+      "docenti": [
+        {
+          "nome": "Rita",
+          "cognome": "Bichi",
+          "affiliazione": "Ordinaria - Università Cattolica del Sacro Cuore, Milano"
+        },
+        {
+          "nome": "Fabrizio",
+          "cognome": "Martire",
+          "affiliazione": "Ordinario - Università Sapienza di Roma"
+        }
+      ],
+      "inizio": "2026-08-31",
+      "fine": "2026-09-04",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "Il corso si propone di accompagnare i partecipanti attraverso l'intero ciclo di vita della ricerca sociale qualitativa. L'obiettivo non è solo trasmettere nozioni teoriche, ma far vivere ai partecipanti l'esperienza diretta della costruzione del materiale empirico. Si partirà dall’illustrazione dei fondamenti epistemologici e teorici, indispensabili per comprendere la logica dell'indagine qualitativa, per passare alla fase operativa.\nParte strategica sarà l'applicazione pratica: costituiti in gruppi di ricerca onlife (in presenza e, eventualmente, online) e costantemente affiancati dai docenti, i partecipanti si immergeranno in un percorso di learning by doing che avrà come oggetto di studio la realtà locale che ospita la scuola estiva. Il territorio circostante non farà dunque da semplice sfondo, ma diventerà un laboratorio: i partecipanti saranno chiamati a leggere il contesto sociale, individuare temi rilevanti legati alla comunità ospitante e definire un disegno della ricerca coerente.\nDalla scelta delle strategie di contatto con la realtà oggetto di studio alla selezione degli strumenti di rilevazione più idonei, il gruppo lavorerà attivamente sul campo, incontrando testimoni e attori locali. Il percorso si concluderà con la fase di trattamento delle informazioni: dalla trascrizione del materiale raccolto fino all'applicazione delle tecniche di analisi. In questa fase finale, particolare attenzione verrà data all'integrazione di strumenti di AI a supporto della costruzione di griglie di lettura e schemi interpretativi, sperimentando le potenzialità e i limiti degli LLM per la codifica assistita e l'esplorazione semantica dei testi.\n\n\n\nLetture consigliate\n\nNguyen‑Trung, K. (2025). ChatGPT in thematic analysis: Can AI become a research assistant in qualitative research?, Quality & Quantity, 59, pp. 4945-4978.\nBichi, R. (2007). La conduzione delle interviste nella ricerca sociale. Roma: Carocci",
+      "stato": "registrato"
+    },
+    {
+      "id": "modulo-2026-2C",
+      "scuola": "scuola-2026-tortorella",
+      "anno": 2026,
+      "titolo": "La cluster analysis per l’analisi sociologica dei territori",
+      "opzione": "2C",
+      "docenti": [
+        {
+          "nome": "Marco",
+          "cognome": "Palmieri",
+          "affiliazione": "Ricercatore - Università Sapienza di Roma"
+        }
+      ],
+      "inizio": "2026-08-31",
+      "fine": "2026-09-04",
+      "ora_inizio": "09:30",
+      "ora_fine": "18:30",
+      "programma": "L'analisi ecologica è parte della ricerca sociale standard, la cui unità di analisi è un aggregato territoriale, come una regione, una provincia, un comune o una circoscrizione elettorale. Tra i pregi di questo approccio c’è la possibilità di creare cluster territoriali con un profilo sociologico, superando i limiti imposti dai confini di carattere geografico e amministrativo, impiegando dati che fungono da indicatori delle condizioni sociali, economiche, demografiche ed educative dei territori inclusi nell'unità territoriale. Questo corso propone una strategia di analisi dei dati che integra tecniche di analisi multivariata (l'analisi delle componenti principali a due stadi e la cluster analysis gerarchica e non gerarchica), al fine di costruire gruppi territoriali tra loro il più eterogenei possibile. L'uso combinato di queste tre tecniche sarà oggetto di esercitazioni interattive che impiegheranno dati ISTAT. In questo corso si utilizzerà il software SPSS.\n\n\n\nLetture consigliate\n\nBackhaus, K., Erichson, B., Gensler, S., Weiber, R., Weiber, T. (2025). Cluster Analysis. In Multivariate analysis. Springer Gabler.\nMarradi, A., Di Franco, G. (2013). Principal Component Analysis and Factor Analysis. Franco Angeli.\nMongiardo M., Palmieri M. (2024). Opposite Universes. A Focus on the Ideological Polarisation of the Italian Electorate, Partecipazione e conflitto, 17/3, pp. 661-681.\nMongiardo M., Palmieri M. (2024). Una sfida impari. Territori ed elettorati nelle elezioni politiche del 2022, Sociologia e ricerca sociale, 130/2, pp. 199-216\nPalmieri M. (2026, in corso di pubblicazione). Learn How to Construct Territorial Clusters with Ecological Data Using Principal Component Analysis and Cluster Analysis. Sage Research Methods\nPintaldi, F. (2009). Come si analizzano i dati territoriali. FrancoAngeli.",
+      "stato": "registrato"
+    }
+  ],
+  "documenti": {
+    "Giffoni2015": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2015-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2015": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2015-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Giffoni2016": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2016-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2016": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2016-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2017": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2017-locandina-scuola-estiva.png"
+      }
+    ],
+    "Tortorella2018": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2018-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2019": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2019-locandina-scuola-estiva.pdf"
+      }
+    ],
+    "WinterPills2020": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2020-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2021": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2021-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2022": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2022-locandina-scuola-estiva.jpg"
+      }
+    ],
+    "Tortorella2024": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2024-locandina-scuola-estiva.pdf"
+      }
+    ],
+    "Tortorella2025": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2025-locandina-scuola-estiva.pdf"
+      }
+    ],
+    "Tortorella2026": [
+      {
+        "titolo": "Locandina dell’edizione",
+        "file": "uploads/formazione/2026-locandina-scuola-estiva.pdf"
+      }
+    ]
+  }
+}

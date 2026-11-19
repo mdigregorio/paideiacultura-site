@@ -83,6 +83,12 @@ const publicFiles = fs.readdirSync(site, { recursive: true }).map(String);
 const catalog = JSON.parse(fs.readFileSync(path.join(contentRoot, 'catalogo-formazione.json'), 'utf8'));
 const schoolIds = new Set(catalog.scuole.map(item => item.id));
 const moduleIds = new Set(catalog.moduli.map(item => item.id));
+const catalogDocuments = catalog.scuole.flatMap(school => school.documenti ?? []);
+for (const document of catalogDocuments) {
+  assert.equal(typeof document.titolo, 'string', 'Titolo allegato mancante');
+  assert.match(document.file, /^uploads\/formazione\/[a-z0-9-]+\.(pdf|png|jpg|jpeg|webp)$/i, 'Percorso allegato non valido');
+  assert.ok(fs.existsSync(path.join(site, document.file)), `Allegato mancante: ${document.file}`);
+}
 assert.equal(schoolIds.size, catalog.scuole.length, 'Identificativi pubblici delle scuole duplicati');
 assert.equal(moduleIds.size, catalog.moduli.length, 'Identificativi pubblici dei moduli duplicati');
 const linkedModules = catalog.scuole.flatMap(school => school.moduli.map(id => ({ id, school: school.id })));
@@ -108,5 +114,6 @@ console.log(JSON.stringify({
   localReferences,
   catalogSchools: catalog.scuole.length,
   catalogModules: catalog.moduli.length,
+  catalogDocuments: new Set(catalogDocuments.map(document => document.file)).size,
   checks: ['contenuti Markdown', 'ancore e ID', 'risorse locali', 'assenza cookie e chiamate esterne', 'HTML semantico di base', 'esclusione SQL e PHP']
 }, null, 2));

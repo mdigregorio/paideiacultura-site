@@ -144,6 +144,19 @@ poi rigenerare la pagina. La procedura completa è in
 fuori dal sito. L'Excel originale non va caricato nel repository pubblico.
 
 Il file pubblico `catalogo-formazione.json` contiene solo i dati del catalogo.
+Il file `integrazioni-formazione.json` conserva le edizioni e i corsi forniti
+separatamente dall'Excel (attualmente il 2026) e i collegamenti alle locandine.
+L'importatore unisce queste integrazioni ai dati dell'Excel prima di rigenerare
+il catalogo. Per correggere i dati del 2026 o gli allegati, modificare questo
+file sorgente e ripetere l'importazione e la generazione.
+
+Le locandine sono in `uploads/formazione/`. Ogni documento ha i campi `titolo`
+e `file`; nell'elenco `documenti` le chiavi sono i codici `origine` delle edizioni,
+per esempio `Tortorella2026`. Si possono collegare più documenti alla stessa
+edizione. PDF e immagini si aprono in una nuova scheda e mostrano formato e peso;
+gli originali non sono ridotti o modificati. Le locandine 2015 e 2016 sono
+collegate a entrambe le sedi riportate nei documenti, senza duplicare i file.
+
 Le righe ripetute rimangono distinte. I collegamenti diretti alle singole
 edizioni e ai corsi si possono condividere copiando l'indirizzo dopo averli aperti.
 

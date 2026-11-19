@@ -41,7 +41,7 @@ def normalize_affiliation(value):
     }
     for pattern, replacement in institutions.items():
         value = re.sub(pattern, replacement, value, flags=re.I)
-    value = re.sub(r"Sapienza Università di Roma", "Sapienza Università di Roma", value, flags=re.I)
+    value = re.sub(r"Sapienza Università di Roma|Università Sapienza di Roma", "Sapienza Università di Roma", value, flags=re.I)
     value = re.sub(r"^Valutatore Professionista$", "Valutatore professionista", value, flags=re.I)
     value = re.sub(r"^CRM Intesa Sanpaolo$", "CRM - Intesa Sanpaolo", value)
     value = re.sub(r",\s*(visiting researcher)\s+", r"; \1 - ", value, flags=re.I)
@@ -72,6 +72,12 @@ def normalize_affiliation(value):
 
 def normalize_catalogue(data):
     """Correzioni editoriali concordate; confronti esatti per tutelare revisioni future."""
+    excluded = {item["id"] for item in data["moduli"]
+                if item["id"] == "modulo-164" and item["stato"] == "annullato"
+                and item["titolo"] == "Pratiche e metodi della Digital Public History"}
+    data["moduli"][:] = [item for item in data["moduli"] if item["id"] not in excluded]
+    for school in data["scuole"]:
+        school["moduli"] = [module_id for module_id in school["moduli"] if module_id not in excluded]
     module_by_id = {item["id"]: item for item in data["moduli"]}
     for item in [*data["scuole"], *data["moduli"]]:
         if item["stato"] == "da-verificare":
@@ -112,6 +118,25 @@ def normalize_catalogue(data):
 
 def key(value):
     return clean(value).casefold()
+
+
+def merge_integrations(data):
+    """Conserva allegati e dati forniti separatamente dall'Excel."""
+    extra = json.loads((SITE / "contenuti" / "integrazioni-formazione.json").read_text(encoding="utf-8"))
+    for group in ("scuole", "moduli"):
+        current = {item["id"]: item for item in data[group]}
+        for item in extra.get(group, []):
+            if item["id"] in current:
+                current[item["id"]].update(item)
+            else:
+                data[group].append(item)
+                current[item["id"]] = item
+    schools = {item["origine"]: item for item in data["scuole"]}
+    for origin, documents in extra.get("documenti", {}).items():
+        if origin not in schools:
+            raise ValueError("Edizione degli allegati non trovata: " + origin)
+        schools[origin]["documenti"] = documents
+    return data
 
 
 def text_nodes(element):
@@ -301,6 +326,7 @@ def convert(source):
         school["moduli"].append(module["id"])
         modules.append(module)
     result = {"versione": 1, "scuole": schools, "moduli": modules}
+    merge_integrations(result)
     normalize_catalogue(result)
     report["avvertenze"] = [item for item in report["avvertenze"]
                              if item.get("tipo") != "docente_con_nome_incompleto"

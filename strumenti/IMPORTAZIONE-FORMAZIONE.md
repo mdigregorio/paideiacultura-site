@@ -16,6 +16,14 @@ Caricare su GitHub il JSON aggiornato e la pagina HTML rigenerata. Il rapporto
 contiene le note di lavoro dell'Excel e va conservato fuori dal repository e
 dalla cartella pubblicata. L'importatore impedisce di salvarlo nel repository.
 
+Il file `contenuti/integrazioni-formazione.json` viene unito automaticamente
+all'Excel: contiene l'edizione 2026 e i suoi sei corsi completi, non presenti
+nel foglio originale, e i collegamenti alle locandine conservate in
+`uploads/formazione/`. Le modifiche a queste informazioni vanno fatte nelle
+integrazioni e poi importate, per conservarle agli aggiornamenti successivi.
+Le chiavi dell'oggetto `documenti` sono i codici `origine` delle scuole;
+ogni allegato richiede `titolo` e `file` (percorso relativo alla radice del sito).
+
 I due fogli richiesti sono `scuole` e `docenti e moduli`. Le intestazioni della
 prima riga devono rimanere quelle del modello. Le righe ripetute sono conservate;
 quando una città e un anno compaiono più volte, i moduli vengono collegati alla
@@ -36,6 +44,10 @@ Anche le correzioni ai nomi, ai campi di Fiorenzo Parziale e al titolo del
 modulo del 2015 sono applicate alle importazioni successive.
 I ruoli rimangono quelli storici: non sono sostituiti con gli incarichi attuali.
 Le fonti e i dati ancora incompleti sono in `strumenti/CORREZIONI-FORMAZIONE.md`.
+Il modulo-164 annullato (`Pratiche e metodi della Digital Public History`, 2025)
+è escluso dal catalogo e dai collegamenti della scuola-060 su richiesta
+dell'associazione. Eliminare manualmente una scheda richiede anche la rimozione
+del suo identificativo nell'elenco `moduli` della scuola collegata.
 
 Gli stati pubblici sono `registrato`, `annullato` e `da-controllare`.
 `registrato` indica che la voce compare nel programma storico e non certifica

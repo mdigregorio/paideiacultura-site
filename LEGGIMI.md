@@ -33,13 +33,17 @@ Non caricare `backup-wordpress`: il backup e il database non fanno parte del sit
 ## Contenuti e revisione editoriale
 
 - Un'unica pagina: manifesto, associazione, formazione, convegni, archivio, contatti.
-- L'archivio della formazione comprende 59 registrazioni di scuole e iniziative
-  e 196 moduli o interventi, dal 1985 al 2025. Si apre per edizione, con una vista
+- L'archivio della formazione comprende 60 registrazioni di scuole e iniziative
+  e 201 moduli o interventi, dal 1985 al 2026. Si apre per edizione, con una vista
   alternativa per corso e filtri per anno, iniziativa e ricerca libera.
   Le registrazioni ripetute sono conservate. Gli stati di annullamento o
   svolgimento da controllare sono indicati accanto alle voci interessate.
   Il catalogo è ricavato dall'Excel con `strumenti/importa-formazione.py`;
   le istruzioni sono in `strumenti/IMPORTAZIONE-FORMAZIONE.md`.
+  I sei corsi del 2026, con programmi e letture, e i riferimenti alle 11 locandine
+  sono conservati in `contenuti/integrazioni-formazione.json`. Gli allegati originali
+  sono in `uploads/formazione/` e si aprono in una nuova scheda senza essere
+  caricati automaticamente durante la consultazione del catalogo.
 - I documenti storici mantenuti nella versione modificata sono separati in
   `contenuti/archivio/` e pubblicati in pannelli espandibili. Le ancore aprono
   automaticamente il documento collegato quando JavaScript è attivo.

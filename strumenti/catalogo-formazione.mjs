@@ -1,11 +1,13 @@
 import fs from 'node:fs';
+import path from 'node:path';
 
 const esc = value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const personName = person => [person.nome, person.cognome].filter(Boolean).join(' ').trim();
 const state = item => item.stato === 'annullato' ? '<span class="catalog-status">Annullato</span>' : item.stato === 'da-controllare' ? '<span class="catalog-status">Da controllare</span>' : '';
 const formatter = new Intl.DateTimeFormat('it', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const date = value => `<time datetime="${esc(value)}">${esc(formatter.format(new Date(value + 'T12:00:00Z')))}</time>`;
-const period = item => item.inizio && item.fine ? (item.inizio === item.fine ? date(item.inizio) : `${date(item.inizio)} – ${date(item.fine)}`) : item.inizio ? date(item.inizio) : esc(item.periodo ?? '');
+const datedTime = (value, hour) => `${date(value)}${hour ? `, ore ${esc(hour)}` : ''}`;
+const period = item => item.inizio && item.fine ? (item.inizio === item.fine && !item.ora_inizio && !item.ora_fine ? date(item.inizio) : `${datedTime(item.inizio, item.ora_inizio)} – ${datedTime(item.fine, item.ora_fine)}`) : item.inizio ? datedTime(item.inizio, item.ora_inizio) : esc(item.periodo ?? '');
 const paragraphs = text => String(text ?? '').trim().split(/\n\s*\n/).filter(Boolean).map(block => `<p>${esc(block).replace(/\n/g, '<br>')}</p>`).join('\n');
 const summary = (year, title, subtitle, status) => `<summary><span class="entry-date">${esc(year)}</span><span class="catalog-entry-title">${esc(title)}${status}<span class="catalog-meta">${esc(subtitle)}</span></span><span class="disclosure" aria-hidden="true"></span></summary>`;
 const historicDocuments = {
@@ -22,6 +24,19 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
   const schoolById = new Map(schools.map(item => [item.id, item]));
   const modules = [...data.moduli].sort((a, b) => b.anno - a.anno || (a.inizio ?? '').localeCompare(b.inizio ?? '') || a.id.localeCompare(b.id));
   const moduleById = new Map(modules.map(item => [item.id, item]));
+  const siteRoot = path.resolve(path.dirname(file), '..');
+  const documentsHtml = school => {
+    if (!school.documenti?.length) return '';
+    const links = school.documenti.map(document => {
+      if (!/^uploads\/formazione\/[a-z0-9-]+\.(pdf|png|jpg|jpeg|webp)$/i.test(document.file)) throw new Error(`Percorso allegato non valido: ${document.file}`);
+      const bytes = fs.statSync(path.join(siteRoot, document.file)).size;
+      const type = path.extname(document.file).slice(1).toUpperCase();
+      const size = bytes >= 1048576 ? `${(bytes / 1048576).toLocaleString('it', { maximumFractionDigits: 1 })} MB` : `${Math.ceil(bytes / 1024)} KB`;
+      const title = document.titolo || 'Locandina dell’edizione';
+      return `<li><a href="${esc(document.file)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(title)} ${school.anno} (${type}, si apre in una nuova scheda)">${esc(title)} <span class="catalog-file-meta">(${type} · ${size})</span> <span aria-hidden="true">↗</span></a></li>`;
+    }).join('');
+    return `<div class="catalog-documents"><h4>Documenti dell’edizione</h4><ul>${links}</ul></div>`;
+  };
   const years = [...new Set(schools.map(item => item.anno))].sort((a, b) => b - a);
   const categories = [...new Set(schools.map(item => item.categoria))].sort((a, b) => a.localeCompare(b, 'it'));
   const schoolTitle = school => `${school.luogo} — ${school.categoria}${school.edizione ? ` · ${school.edizione}ª edizione` : ''}`;
@@ -37,6 +52,7 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
       ${summary(item.anno, item.titolo || 'Intervento senza titolo registrato', `${school.luogo} · ${(item.docenti ?? []).map(personName).join(', ')}`, state(item))}
       <div class="catalog-body"><p class="catalog-meta">${esc(school.categoria)}${school.edizione ? ` · ${esc(school.edizione)}ª edizione` : ''}${item.opzione ? ` · Settimana / opzione ${esc(item.opzione)}` : ''}</p>
         ${period(item) ? `<p>${period(item)}</p>` : ''}
+        ${documentsHtml(school)}
         <h4>Docenti indicati nel programma</h4><ul class="catalog-teachers">${(item.docenti ?? []).map(person => `<li>${esc(personName(person))}${person.affiliazione ? `<span>${esc(person.affiliazione)}</span>` : ''}</li>`).join('')}</ul>
         ${item.programma ? `<h4>Programma del corso</h4><div class="prose">${paragraphs(item.programma)}</div>` : ''}
         <div class="catalog-actions"><a href="#${esc(school.id)}" data-show-edition>Vedi l’edizione</a>${historicLink(school)}</div>
@@ -54,6 +70,7 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
     return `<details class="edition-entry" id="${esc(school.id)}" data-catalog-edition data-year="${school.anno}" data-category="${esc(school.categoria)}" data-search="${esc(search)}">
       ${summary(school.anno, title, subtitle, state(school))}
       <div class="catalog-body">${period(school) ? `<p>${period(school)}</p>` : ''}${school.sedi_multiple ? '<p class="catalog-meta">Edizione su due sedi.</p>' : ''}
+        ${documentsHtml(school)}
         ${items.length ? `<ul class="catalog-modules">${items.map(item => `<li><a href="#${esc(item.id)}">${esc(item.titolo || 'Intervento senza titolo registrato')}</a>${state(item)}<span class="catalog-meta">${esc((item.docenti ?? []).map(personName).join(', '))}${item.opzione ? ` · Settimana / opzione ${esc(item.opzione)}` : ''}</span></li>`).join('')}</ul>` : '<p class="catalog-meta">Il dettaglio dei moduli non è disponibile.</p>'}
         ${historicLink(school) ? `<div class="catalog-actions">${historicLink(school)}</div>` : ''}
       </div></details>`;

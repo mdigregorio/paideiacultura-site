@@ -128,6 +128,11 @@ details[open]>summary{margin-bottom:1rem}
 .catalog-modules a{display:inline-block;min-height:2.75rem;padding:.35rem 0;font-size:.925rem;overflow-wrap:anywhere}
 .catalog-status{display:inline-block;font:.75rem/1.5 var(--sans);color:var(--ink);background:var(--soft);padding:.15rem .45rem;margin:.3rem .35rem .3rem 0;vertical-align:middle}
 .catalog-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin:1.2rem 0}
+.catalog-documents{margin:1rem 0;padding:1rem;border:1px solid var(--line);background:var(--soft)}
+.catalog-documents h4{margin:0 0 .35rem;font-size:.9rem}
+.catalog-documents ul{list-style:none;margin:0;padding:0}
+.catalog-documents a{display:inline-block;min-height:2.75rem;padding:.6rem 0;overflow-wrap:anywhere}
+.catalog-file-meta{font:.8rem var(--sans);color:var(--muted)}
 .catalog-body>a{display:inline-flex;min-height:2.75rem;align-items:center;font-size:.875rem}
 @media(max-width:1050px){.catalog-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-controls .catalog-search{grid-column:auto}}
 @media(max-width:760px){.training-catalog,.course-entry,.edition-entry{scroll-margin-top:6rem}}

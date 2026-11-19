@@ -27,6 +27,10 @@ sono conservati. Il file Excel originale rimane invariato.
   di una ricerca bi-alternativa`, riscontrato nel
   [CV di una partecipante pubblicato dall'Università di Torino](https://www.unito.it/sites/default/files/ugov_files/621748_CV_Silvia_Maroncelli_%20UA_01%20-%20Silvia%20Maroncelli_trasp.pdf).
 - Grafie `jamovi`, `open source` e plurale italiano invariabile `software` uniformate.
+- Modulo-164, `Pratiche e metodi della Digital Public History` (2025):
+  rimosso su richiesta dell'associazione perché annullato, insieme al riferimento
+  nella scuola-060. L'importatore esclude questa specifica voce annullata;
+  l'intervento extra-programma di Ravveduto (modulo-165) rimane nel catalogo.
 - Stato ed etichetta pubblica `da-controllare` / `Da controllare`, in luogo
   di `da-verificare` / `Da verificare`.
 - Nelle 20 schede MetA che contenevano cognomi nel campo `argomento`, questi
