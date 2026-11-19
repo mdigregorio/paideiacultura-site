@@ -25,10 +25,10 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
   const years = [...new Set(schools.map(item => item.anno))].sort((a, b) => b - a);
   const categories = [...new Set(schools.map(item => item.categoria))].sort((a, b) => a.localeCompare(b, 'it'));
   const categoryLabels = {
-    'Scuola estiva di teoria e metodologia sociologica': 'Scuola estiva di teoria e metodologia sociologica',
-    'Scuola estiva sul metodo e la ricerca sociale': 'Scuola estiva sul metodo e la ricerca sociale',
-    'Scuola invernale di metodologia': 'Scuola invernale di metodologia',
-    'Scuola invernale di teoria e metodologia sociologica': 'Scuola invernale di teoria e metodologia sociologica'
+    'Scuola estiva di teoria e metodologia sociologica': 'Estive · teoria e metodologia',
+    'Scuola estiva sul metodo e la ricerca sociale': 'Estive · metodo e ricerca sociale',
+    'Scuola invernale di metodologia': 'Invernali · metodologia',
+    'Scuola invernale di teoria e metodologia sociologica': 'Invernali · teoria e metodologia'
   };
   const schoolTitle = school => `${school.luogo} — ${school.categoria}${school.edizione ? ` · ${school.edizione}ª edizione` : ''}`;
   const moduleSearch = item => [item.titolo, item.opzione, ...(item.docenti ?? []).map(personName)].filter(Boolean).join(' ');
@@ -70,7 +70,7 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
       <button class="button button-secondary" type="button" id="catalogo-azzera">Azzera filtri</button>
     </div>
     <p class="catalog-results" id="catalogo-risultati" role="status">Le edizioni sono ordinate dalla più recente.</p>
-    <p class="catalog-note">Le affiliazioni dei docenti si riferiscono al programma dell’epoca.</p>
+    <p class="catalog-note">L’archivio comprende i programmi previsti. Le attività annullate o da verificare sono indicate. Le affiliazioni dei docenti si riferiscono al programma dell’epoca.</p>
     <p id="catalogo-nessuno" hidden>Nessun risultato. Prova a cambiare la ricerca o i filtri.</p>
     <div class="catalog-list" id="catalogo-edizioni" data-catalog-panel="edizioni"><h3 class="sr-only">Scuole e iniziative per edizione</h3>${schoolsHtml}</div>
     <div class="catalog-list" id="catalogo-corsi" data-catalog-panel="corsi"><h3>Corsi e interventi</h3>${coursesHtml}</div>
