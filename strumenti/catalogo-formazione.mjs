@@ -25,10 +25,10 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
   const years = [...new Set(schools.map(item => item.anno))].sort((a, b) => b - a);
   const categories = [...new Set(schools.map(item => item.categoria))].sort((a, b) => a.localeCompare(b, 'it'));
   const categoryLabels = {
-    'Scuola estiva di teoria e metodologia sociologica': 'Estive · teoria e metodologia',
-    'Scuola estiva sul metodo e la ricerca sociale': 'Estive · metodo e ricerca sociale',
-    'Scuola invernale di metodologia': 'Invernali · metodologia',
-    'Scuola invernale di teoria e metodologia sociologica': 'Invernali · teoria e metodologia'
+    'Scuola estiva di teoria e metodologia sociologica': 'Scuola estiva di teoria e metodologia sociologica',
+    'Scuola estiva sul metodo e la ricerca sociale': 'Scuola estiva sul metodo e la ricerca sociale',
+    'Scuola invernale di metodologia': 'Scuola invernale di metodologia',
+    'Scuola invernale di teoria e metodologia sociologica': 'Scuola invernale di teoria e metodologia sociologica'
   };
   const schoolTitle = school => `${school.luogo} — ${school.categoria}${school.edizione ? ` · ${school.edizione}ª edizione` : ''}`;
   const moduleSearch = item => [item.titolo, item.opzione, ...(item.docenti ?? []).map(personName)].filter(Boolean).join(' ');
