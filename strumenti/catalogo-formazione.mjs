@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 const esc = value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const personName = person => [person.nome, person.cognome].filter(Boolean).join(' ').trim();
-const state = item => item.stato === 'annullato' ? '<span class="catalog-status">Annullato</span>' : item.stato === 'da-verificare' ? '<span class="catalog-status">Da verificare</span>' : '';
+const state = item => item.stato === 'annullato' ? '<span class="catalog-status">Annullato</span>' : item.stato === 'da-controllare' ? '<span class="catalog-status">Da controllare</span>' : '';
 const formatter = new Intl.DateTimeFormat('it', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const date = value => `<time datetime="${esc(value)}">${esc(formatter.format(new Date(value + 'T12:00:00Z')))}</time>`;
 const period = item => item.inizio && item.fine ? (item.inizio === item.fine ? date(item.inizio) : `${date(item.inizio)} – ${date(item.fine)}`) : item.inizio ? date(item.inizio) : esc(item.periodo ?? '');
@@ -25,10 +25,10 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
   const years = [...new Set(schools.map(item => item.anno))].sort((a, b) => b - a);
   const categories = [...new Set(schools.map(item => item.categoria))].sort((a, b) => a.localeCompare(b, 'it'));
   const categoryLabels = {
-    'Scuola estiva di teoria e metodologia sociologica': 'Scuola estiva di teoria e metodologia sociologica',
-    'Scuola estiva sul metodo e la ricerca sociale': 'Scuola estiva sul metodo e la ricerca sociale',
-    'Scuola invernale di metodologia': 'Scuola invernale di metodologia',
-    'Scuola invernale di teoria e metodologia sociologica': 'Scuola invernale di teoria e metodologia sociologica'
+    'Scuola estiva di teoria e metodologia sociologica': 'Estive · teoria e metodologia',
+    'Scuola estiva sul metodo e la ricerca sociale': 'Estive · metodo e ricerca sociale',
+    'Scuola invernale di metodologia': 'Invernali · metodologia',
+    'Scuola invernale di teoria e metodologia sociologica': 'Invernali · teoria e metodologia'
   };
   const schoolTitle = school => `${school.luogo} — ${school.categoria}${school.edizione ? ` · ${school.edizione}ª edizione` : ''}`;
   const moduleSearch = item => [item.titolo, item.opzione, ...(item.docenti ?? []).map(personName)].filter(Boolean).join(' ');
@@ -43,7 +43,7 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
       ${summary(item.anno, item.titolo || 'Intervento senza titolo registrato', `${school.luogo} · ${(item.docenti ?? []).map(personName).join(', ')}`, state(item))}
       <div class="catalog-body"><p class="catalog-meta">${esc(school.categoria)}${school.edizione ? ` · ${esc(school.edizione)}ª edizione` : ''}${item.opzione ? ` · Settimana / opzione ${esc(item.opzione)}` : ''}</p>
         ${period(item) ? `<p>${period(item)}</p>` : ''}
-        <h4>Docenti del corso</h4><ul class="catalog-teachers">${(item.docenti ?? []).map(person => `<li>${esc(personName(person))}${person.affiliazione ? `<span>${esc(person.affiliazione)}</span>` : ''}</li>`).join('')}</ul>
+        <h4>Docenti indicati nel programma</h4><ul class="catalog-teachers">${(item.docenti ?? []).map(person => `<li>${esc(personName(person))}${person.affiliazione ? `<span>${esc(person.affiliazione)}</span>` : ''}</li>`).join('')}</ul>
         ${item.programma ? `<h4>Programma del corso</h4><div class="prose">${paragraphs(item.programma)}</div>` : ''}
         <div class="catalog-actions"><a href="#${esc(school.id)}" data-show-edition>Vedi l’edizione</a>${historicLink(school)}</div>
       </div></details>`;
@@ -53,8 +53,12 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
     if (items.some(item => !item)) throw new Error(`Modulo mancante per ${school.id}`);
     const search = [schoolTitle(school), school.argomento, ...items.map(moduleSearch)].filter(Boolean).join(' ');
     const title = school.categoria === 'MetA' && school.argomento ? school.argomento : schoolTitle(school);
+    const teachers = [...new Set(items.flatMap(item => (item.docenti ?? []).map(personName)).filter(Boolean))];
+    const subtitle = school.categoria === 'MetA'
+      ? `${school.luogo} · MetA${teachers.length ? ` · Docenti: ${teachers.join(', ')}` : ''}`
+      : school.struttura || school.luogo;
     return `<details class="edition-entry" id="${esc(school.id)}" data-catalog-edition data-year="${school.anno}" data-category="${esc(school.categoria)}" data-search="${esc(search)}">
-      ${summary(school.anno, title, school.categoria === 'MetA' ? `${school.luogo} · MetA` : school.struttura || school.luogo, state(school))}
+      ${summary(school.anno, title, subtitle, state(school))}
       <div class="catalog-body">${period(school) ? `<p>${period(school)}</p>` : ''}${school.sedi_multiple ? '<p class="catalog-meta">Edizione su due sedi.</p>' : ''}
         ${items.length ? `<ul class="catalog-modules">${items.map(item => `<li><a href="#${esc(item.id)}">${esc(item.titolo || 'Intervento senza titolo registrato')}</a>${state(item)}<span class="catalog-meta">${esc((item.docenti ?? []).map(personName).join(', '))}${item.opzione ? ` · Settimana / opzione ${esc(item.opzione)}` : ''}</span></li>`).join('')}</ul>` : '<p class="catalog-meta">Il dettaglio dei moduli non è disponibile.</p>'}
         ${historicLink(school) ? `<div class="catalog-actions">${historicLink(school)}</div>` : ''}
@@ -70,7 +74,7 @@ export function renderCatalogoFormazione(file, archiveIds = []) {
       <button class="button button-secondary" type="button" id="catalogo-azzera">Azzera filtri</button>
     </div>
     <p class="catalog-results" id="catalogo-risultati" role="status">Le edizioni sono ordinate dalla più recente.</p>
-    <p class="catalog-note">Le affiliazioni dei docenti si riferiscono al programma dell’epoca.</p>
+    <p class="catalog-note">L’archivio comprende i programmi previsti. Le attività annullate o da controllare sono indicate. Le affiliazioni dei docenti si riferiscono al programma dell’epoca.</p>
     <p id="catalogo-nessuno" hidden>Nessun risultato. Prova a cambiare la ricerca o i filtri.</p>
     <div class="catalog-list" id="catalogo-edizioni" data-catalog-panel="edizioni"><h3 class="sr-only">Scuole e iniziative per edizione</h3>${schoolsHtml}</div>
     <div class="catalog-list" id="catalogo-corsi" data-catalog-panel="corsi"><h3>Corsi e interventi</h3>${coursesHtml}</div>

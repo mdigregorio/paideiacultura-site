@@ -37,7 +37,7 @@ Non caricare `backup-wordpress`: il backup e il database non fanno parte del sit
   e 196 moduli o interventi, dal 1985 al 2025. Si apre per edizione, con una vista
   alternativa per corso e filtri per anno, iniziativa e ricerca libera.
   Le registrazioni ripetute sono conservate. Gli stati di annullamento o
-  svolgimento da verificare sono indicati accanto alle voci interessate.
+  svolgimento da controllare sono indicati accanto alle voci interessate.
   Il catalogo è ricavato dall'Excel con `strumenti/importa-formazione.py`;
   le istruzioni sono in `strumenti/IMPORTAZIONE-FORMAZIONE.md`.
 - I documenti storici mantenuti nella versione modificata sono separati in

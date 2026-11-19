@@ -93,7 +93,7 @@ for (const item of catalog.moduli) {
   assert.ok(linkedModules.some(link => link.id === item.id && link.school === item.scuola), `Associazione incoerente: ${item.id}`);
 }
 for (const item of [...catalog.scuole, ...catalog.moduli]) {
-  assert.ok(['registrato', 'annullato', 'da-verificare'].includes(item.stato), `Stato non valido: ${item.id}`);
+  assert.ok(['registrato', 'annullato', 'da-controllare'].includes(item.stato), `Stato non valido: ${item.id}`);
   assert.ok(!item.inizio || !item.fine || item.fine >= item.inizio, `Intervallo invertito: ${item.id}`);
   assert.ok(!item.inizio || Number(item.inizio.slice(0, 4)) === item.anno, `Anno della data incoerente: ${item.id}`);
   if (readMeta(sectionFiles.archivio).attiva !== false) assert.ok(ids.includes(item.id), `Voce del catalogo mancante: ${item.id}`);

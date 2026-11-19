@@ -24,6 +24,92 @@ def clean(value):
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+def normalize_affiliation(value):
+    """Uniforma la separazione ruolo/ente senza ricostruire i dati storici."""
+    value = clean(value)
+    for typo, replacement in (("Unviersità", "Università"), ("Unversità", "Università"), ("degi studi", "degli Studi"), ("Comunucazione", "Comunicazione")):
+        value = re.sub(re.escape(typo), replacement, value, flags=re.I)
+    institutions = {
+        r"Università (?:degli studi )?di Salerno": "Università degli Studi di Salerno",
+        r"Università (?:degli studi )?di Torino": "Università degli Studi di Torino",
+        r"Università (?:degli studi )?di Genova": "Università degli Studi di Genova",
+        r"Università (?:degli studi )?di Firenze": "Università di Firenze",
+        r"Università (?:degli studi )?di Napoli Federico II": "Università degli Studi di Napoli Federico II",
+        r"Università degli studi di Urbino Carlo Bo": "Università degli Studi di Urbino Carlo Bo",
+        r"Università (?:La )?Cattolica di Milano": "Università Cattolica del Sacro Cuore, Milano",
+        r"Università di Napoli [lL]['’]Orientale": "Università di Napoli L’Orientale",
+    }
+    for pattern, replacement in institutions.items():
+        value = re.sub(pattern, replacement, value, flags=re.I)
+    value = re.sub(r"Sapienza Università di Roma", "Sapienza Università di Roma", value, flags=re.I)
+    value = re.sub(r"^Valutatore Professionista$", "Valutatore professionista", value, flags=re.I)
+    value = re.sub(r"^CRM Intesa Sanpaolo$", "CRM - Intesa Sanpaolo", value)
+    value = re.sub(r",\s*(visiting researcher)\s+", r"; \1 - ", value, flags=re.I)
+    roles = (
+        r"Dottorand[oa](?: di ricerca in metodologia delle scienze sociali)?|"
+        r"Assegnista(?: di ricerca)?|Professore ordinario|(?:Professore )?emerito|"
+        r"Ordinari[oa]|Associat[oa]|Ricercatore|Ricercatrice|Direttore di ricerca|"
+        r"Postdoctoral Research Fellow in Urban Studies|PhD in Scienze della Comunicazione|"
+        r"visiting professor|visiting researcher"
+    )
+    parts = []
+    for part in value.split(";"):
+        part = part.strip()
+        match = re.fullmatch(r"(" + roles + r")(?:\s*[-,]\s*|\s+)(.+)", part, flags=re.I)
+        if match:
+            role, institution = match.groups()
+            role = {
+                "professore ordinario": "Ordinario", "professore emerito": "Emerito",
+                "assegnista": "Assegnista di ricerca", "ordinario": "Ordinario",
+                "ricercatore": "Ricercatore",
+            }.get(role.casefold(), role)
+            # Il trattino può essere già presente dopo uno spazio.
+            institution = re.sub(r"^[-,]\s*", "", institution)
+            part = role + " - " + institution
+        parts.append(part)
+    return "; ".join(parts)
+
+
+def normalize_catalogue(data):
+    """Correzioni editoriali concordate; confronti esatti per tutelare revisioni future."""
+    module_by_id = {item["id"]: item for item in data["moduli"]}
+    for item in [*data["scuole"], *data["moduli"]]:
+        if item["stato"] == "da-verificare":
+            item["stato"] = "da-controllare"
+    for school in data["scuole"]:
+        if school["categoria"] != "MetA" or not school["argomento"]:
+            continue
+        surnames = {person["cognome"] for module_id in school["moduli"]
+                    for person in module_by_id[module_id]["docenti"] if person["cognome"]}
+        if surnames:
+            suffix = r"(?:,\s*|\s+e\s+)(?:" + "|".join(re.escape(name) for name in sorted(surnames)) + r")$"
+            while re.search(suffix, school["argomento"]):
+                school["argomento"] = re.sub(suffix, "", school["argomento"]).strip()
+    for course in data["moduli"]:
+        title = course["titolo"]
+        if course["id"] == "modulo-088" and title == "Come si analizza un le tri-nazionale di un ricerca bi-alternativa":
+            course["titolo"] = "Come si analizza un file tri-nazionale di una ricerca bi-alternativa"
+        elif title:
+            course["titolo"] = re.sub(r"\bJamovi\b", "jamovi", title).replace("open-source", "open source").replace("softwares", "software")
+        for person in course["docenti"]:
+            person["affiliazione"] = normalize_affiliation(person["affiliazione"])
+            name = (person["nome"], person["cognome"])
+            replacements = {
+                ("Enrica", "Salavatori"): ("Enrica", "Salvatori"),
+                ("Raffele", "Rauty"): ("Raffaele", "Rauty"),
+                ("Maria Pia", "Di Buono"): ("Maria Pia", "di Buono"),
+                ("M. Concetta", "Pitrone"): ("Maria Concetta", "Pitrone"),
+            }
+            if name in replacements:
+                person["nome"], person["cognome"] = replacements[name]
+            if course["id"] == "modulo-078":
+                if name == ("Paolo", "Diana") and person["affiliazione"] == "Fiorenzo":
+                    person["affiliazione"] = ""
+                elif name == ("Parziale", ""):
+                    person["nome"], person["cognome"] = "Fiorenzo", "Parziale"
+    return data
+
+
 def key(value):
     return clean(value).casefold()
 
@@ -101,7 +187,7 @@ def note_state(note):
     if note.startswith("corso annullato") or note in {"annullata", "annullato"}:
         return "annullato"
     if "annullat" in note or "si è tenuta?" in note or "si e tenuta?" in note:
-        return "da-verificare"
+        return "da-controllare"
     return "registrato"
 
 
@@ -191,6 +277,7 @@ def convert(source):
         teachers = []
         for position in range(1, 4):
             teacher = {field: clean(row.get(f"docente {position} {field}")) for field in ("nome", "cognome", "affiliazione")}
+            teacher["affiliazione"] = normalize_affiliation(teacher["affiliazione"])
             if teacher["nome"] or teacher["cognome"]:
                 teachers.append(teacher)
                 if not teacher["nome"] or not teacher["cognome"]:
@@ -214,6 +301,10 @@ def convert(source):
         school["moduli"].append(module["id"])
         modules.append(module)
     result = {"versione": 1, "scuole": schools, "moduli": modules}
+    normalize_catalogue(result)
+    report["avvertenze"] = [item for item in report["avvertenze"]
+                             if item.get("tipo") != "docente_con_nome_incompleto"
+                             or not (item["docente"]["nome"] and item["docente"]["cognome"])]
     validate(result)
     report["riepilogo"] = {
         "scuole": len(schools), "moduli": len(modules),
@@ -240,7 +331,7 @@ def validate(data):
     if len(linked) != len(modules) or set(linked) != set(modules):
         raise ValueError("Un modulo non è collegato esattamente a una scuola")
     for item in [*schools.values(), *modules.values()]:
-        if item["stato"] not in {"registrato", "annullato", "da-verificare"}:
+        if item["stato"] not in {"registrato", "annullato", "da-controllare"}:
             raise ValueError("Stato sconosciuto")
         if item["inizio"] and item["fine"] and item["fine"] < item["inizio"]:
             raise ValueError("Intervallo di date invertito")

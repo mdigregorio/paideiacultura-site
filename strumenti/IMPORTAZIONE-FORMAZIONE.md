@@ -30,7 +30,14 @@ del 2026, sono mantenuti giorno e mese e usato l'anno della colonna `anno`.
 Gli altri intervalli invertiti o con anno incompatibile vengono omessi e
 segnalati nel rapporto. Le date mancanti non vengono ricostruite.
 
-Gli stati pubblici sono `registrato`, `annullato` e `da-verificare`.
+Le affiliazioni vengono presentate nel formato `Ruolo - Affiliazione`,
+con denominazioni e maiuscole uniformi e correzione dei refusi concordati.
+Anche le correzioni ai nomi, ai campi di Fiorenzo Parziale e al titolo del
+modulo del 2015 sono applicate alle importazioni successive.
+I ruoli rimangono quelli storici: non sono sostituiti con gli incarichi attuali.
+Le fonti e i dati ancora incompleti sono in `strumenti/CORREZIONI-FORMAZIONE.md`.
+
+Gli stati pubblici sono `registrato`, `annullato` e `da-controllare`.
 `registrato` indica che la voce compare nel programma storico e non certifica
 la presenza effettiva di ogni docente. Le affiliazioni sono quelle riportate
 nel programma dell'epoca. Le note redazionali non vengono copiate nel JSON;
